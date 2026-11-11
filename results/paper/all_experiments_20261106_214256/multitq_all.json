@@ -1,0 +1,322 @@
+{
+  "source": "E:\\cursor-code\\TKG1\\MemoTime-main\\MemoTime-main\\results\\paper\\comparison_20261106_214356",
+  "n": 500,
+  "rows": [
+    {
+      "variant": "B0",
+      "desc": "CandidatePrior top1",
+      "paper_map": "≈ w/o Temporal Evidence Retrieval (candidate prior only)",
+      "overall": 10.8,
+      "path_hit@80": 0,
+      "Multiple": 5.19,
+      "Single": 12.88,
+      "entity": 15.65,
+      "time": null,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 6.12,
+        "first_last": 0.0,
+        "before_last": 4.76,
+        "before_after": 31.37,
+        "equal_multi": 4.35,
+        "equal": 9.68
+      },
+      "wall_sec": 0.0,
+      "n": 500
+    },
+    {
+      "variant": "B1",
+      "desc": "OneHopLexical",
+      "paper_map": "≈ weak graph (OneHop lexical)",
+      "overall": 20.0,
+      "path_hit@80": 74.2,
+      "Multiple": 11.11,
+      "Single": 23.29,
+      "entity": 24.93,
+      "time": 9.03,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 10.2,
+        "first_last": 9.26,
+        "before_last": 7.94,
+        "before_after": 43.14,
+        "equal_multi": 21.74,
+        "equal": 20.0
+      },
+      "wall_sec": 1.0,
+      "n": 500
+    },
+    {
+      "variant": "A1",
+      "desc": "BiBFS only (Inv1)",
+      "paper_map": "≈ w/o EGOR (BiBFS only)",
+      "overall": 23.4,
+      "path_hit@80": 56.6,
+      "Multiple": 16.3,
+      "Single": 26.03,
+      "entity": 25.51,
+      "time": 18.71,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 16.33,
+        "first_last": 17.59,
+        "before_last": 12.7,
+        "before_after": 28.43,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 82.5,
+      "n": 500
+    },
+    {
+      "variant": "A2",
+      "desc": "BiBFS+EGOR (Inv1+2)",
+      "paper_map": "BiBFS+EGOR",
+      "overall": 24.8,
+      "path_hit@80": 58.4,
+      "Multiple": 10.37,
+      "Single": 30.14,
+      "entity": 27.83,
+      "time": 18.06,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 10.2,
+        "first_last": 16.67,
+        "before_last": 4.76,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 235.8,
+      "n": 500
+    },
+    {
+      "variant": "A3",
+      "desc": "BiBFS+TFC (Inv1+3)",
+      "paper_map": "BiBFS+TFC",
+      "overall": 23.4,
+      "path_hit@80": 56.6,
+      "Multiple": 16.3,
+      "Single": 26.03,
+      "entity": 25.51,
+      "time": 18.71,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 16.33,
+        "first_last": 17.59,
+        "before_last": 12.7,
+        "before_after": 28.43,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 5.2,
+      "n": 500
+    },
+    {
+      "variant": "FULL",
+      "desc": "BiBFS+EGOR+TFC",
+      "paper_map": "MemoTime-Improved (BiBFS+EGOR+TFC) ≈ Full",
+      "overall": 24.8,
+      "path_hit@80": 58.4,
+      "Multiple": 10.37,
+      "Single": 30.14,
+      "entity": 27.83,
+      "time": 18.06,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 10.2,
+        "first_last": 16.67,
+        "before_last": 4.76,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 210.6,
+      "n": 500
+    },
+    {
+      "variant": "H1",
+      "desc": "FULL D_max=1",
+      "paper_map": "Full D_max=1",
+      "overall": 24.2,
+      "path_hit@80": 60.2,
+      "Multiple": 8.15,
+      "Single": 30.14,
+      "entity": 26.96,
+      "time": 18.06,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 6.12,
+        "first_last": 16.67,
+        "before_last": 3.17,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 15.5,
+      "n": 500
+    },
+    {
+      "variant": "H2",
+      "desc": "FULL D_max=2",
+      "paper_map": "Full D_max=2",
+      "overall": 24.8,
+      "path_hit@80": 58.4,
+      "Multiple": 10.37,
+      "Single": 30.14,
+      "entity": 27.83,
+      "time": 18.06,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 10.2,
+        "first_last": 16.67,
+        "before_last": 4.76,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 211.4,
+      "n": 500
+    },
+    {
+      "variant": "H3",
+      "desc": "FULL D_max=3 paper",
+      "paper_map": "Full D_max=3 (paper)",
+      "overall": 24.8,
+      "path_hit@80": 58.4,
+      "Multiple": 10.37,
+      "Single": 30.14,
+      "entity": 27.83,
+      "time": 18.06,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 10.2,
+        "first_last": 16.67,
+        "before_last": 4.76,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 212.4,
+      "n": 500
+    },
+    {
+      "variant": "S1",
+      "desc": "FULL lexical Score",
+      "paper_map": "≈ w/o Embedding Retrieval (lexical Score)",
+      "overall": 23.4,
+      "path_hit@80": 57.4,
+      "Multiple": 7.41,
+      "Single": 29.32,
+      "entity": 26.67,
+      "time": 16.13,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 2.04,
+        "first_last": 12.96,
+        "before_last": 4.76,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.97
+      },
+      "wall_sec": 211.4,
+      "n": 500
+    },
+    {
+      "variant": "S2",
+      "desc": "FULL GPU embed Score",
+      "paper_map": "Full + GPU embedding Score",
+      "overall": 24.8,
+      "path_hit@80": 58.4,
+      "Multiple": 10.37,
+      "Single": 30.14,
+      "entity": 27.83,
+      "time": 18.06,
+      "Explicit": null,
+      "Implicit": null,
+      "Temporal": null,
+      "Ordinal": null,
+      "by_qtype": {
+        "after_first": 10.2,
+        "first_last": 16.67,
+        "before_last": 4.76,
+        "before_after": 44.12,
+        "equal_multi": 26.09,
+        "equal": 30.32
+      },
+      "wall_sec": 212.2,
+      "n": 500
+    }
+  ],
+  "paper_table1_ref": {
+    "overall": 64.2,
+    "Multiple": 40.3,
+    "Single": 73.0,
+    "entity": 61.5,
+    "time": 70.8
+  },
+  "paper_table4_ref": {
+    "Full": {
+      "overall": 64.2,
+      "Multiple": 40.3,
+      "Single": 73.0,
+      "entity": 61.5,
+      "time": 70.8
+    },
+    "w/o Graph-based Retrieval": {
+      "overall": 52.9,
+      "Multiple": 23.5,
+      "Single": 65.0
+    },
+    "w/o Embedding Retrieval": {
+      "overall": 60.1,
+      "Multiple": 38.6,
+      "Single": 68.0
+    },
+    "w/o Temporal Evidence Retrieval": {
+      "overall": 11.2,
+      "Multiple": 8.0,
+      "Single": 12.4
+    },
+    "w/o Question Tree": {
+      "overall": 58.3,
+      "Multiple": 19.3,
+      "Single": 72.6
+    },
+    "w/o Experience Memory": {
+      "overall": 59.8,
+      "Multiple": 26.1,
+      "Single": 72.2
+    }
+  }
+}

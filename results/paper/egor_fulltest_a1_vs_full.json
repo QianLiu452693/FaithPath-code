@@ -1,0 +1,25 @@
+{
+  "dataset": "MultiTQ",
+  "n": 54584,
+  "n_boot": 2000,
+  "seed": 0,
+  "ledgers": {
+    "A1": "comparison_20261108_203409/A1.json",
+    "FULL": "comparison_20261108_002112/FULL.json"
+  },
+  "A1": {
+    "hits@1": 23.453759343397333,
+    "path_hit@80": 59.839879818261764
+  },
+  "FULL": {
+    "hits@1": 24.31481752894621,
+    "path_hit@80": 60.87681371830573
+  },
+  "paired_FULL_minus_A1_pp": {
+    "delta": 0.8610581855488797,
+    "ci_low": 0.6577018906639309,
+    "ci_high": 1.0772387512824277,
+    "includes_0": false
+  },
+  "note": "A1 is BiBFS-only; FULL adds EGOR+TFC. Paired bootstrap on aligned qids."
+}

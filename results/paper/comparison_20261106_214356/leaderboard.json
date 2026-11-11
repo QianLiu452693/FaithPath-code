@@ -1,0 +1,1024 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "n_questions": 500,
+  "dataset": "MultiTQ",
+  "leaderboard": [
+    {
+      "variant": "B0",
+      "desc": "CandidatePrior top1",
+      "n": 500,
+      "correct": 54,
+      "overall_hits@1": 10.8,
+      "path_hit@80": 0.0,
+      "avg_paths": 0.0,
+      "wall_sec": 0.0011060237884521484,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 7,
+          "hits@1": 5.185185185185185
+        },
+        "Single": {
+          "total": 365,
+          "correct": 47,
+          "hits@1": 12.876712328767123
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 3,
+          "hits@1": 6.122448979591836
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 0,
+          "hits@1": 0.0
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 32,
+          "hits@1": 31.372549019607842
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 1,
+          "hits@1": 4.3478260869565215
+        },
+        "equal": {
+          "total": 155,
+          "correct": 15,
+          "hits@1": 9.67741935483871
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 54,
+          "hits@1": 15.652173913043478
+        },
+        "time": {
+          "total": 155,
+          "correct": 0,
+          "hits@1": 0.0
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 29,
+          "hits@1": 9.508196721311476
+        },
+        "year": {
+          "total": 94,
+          "correct": 15,
+          "hits@1": 15.957446808510639
+        },
+        "month": {
+          "total": 101,
+          "correct": 10,
+          "hits@1": 9.900990099009901
+        }
+      },
+      "spec": {
+        "desc": "CandidatePrior top1",
+        "bibfs": false,
+        "egor": false,
+        "tfc": false,
+        "onehop": false,
+        "d_max": 1,
+        "embed": false
+      }
+    },
+    {
+      "variant": "B1",
+      "desc": "OneHopLexical",
+      "n": 500,
+      "correct": 100,
+      "overall_hits@1": 20.0,
+      "path_hit@80": 74.2,
+      "avg_paths": 79.97,
+      "wall_sec": 0.9723455905914307,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 15,
+          "hits@1": 11.11111111111111
+        },
+        "Single": {
+          "total": 365,
+          "correct": 85,
+          "hits@1": 23.28767123287671
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 10,
+          "hits@1": 9.25925925925926
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 5,
+          "hits@1": 7.936507936507937
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 44,
+          "hits@1": 43.13725490196079
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 5,
+          "hits@1": 21.73913043478261
+        },
+        "equal": {
+          "total": 155,
+          "correct": 31,
+          "hits@1": 20.0
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 86,
+          "hits@1": 24.92753623188406
+        },
+        "time": {
+          "total": 155,
+          "correct": 14,
+          "hits@1": 9.03225806451613
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 47,
+          "hits@1": 15.40983606557377
+        },
+        "year": {
+          "total": 94,
+          "correct": 27,
+          "hits@1": 28.72340425531915
+        },
+        "month": {
+          "total": 101,
+          "correct": 26,
+          "hits@1": 25.742574257425744
+        }
+      },
+      "spec": {
+        "desc": "OneHopLexical",
+        "bibfs": false,
+        "egor": false,
+        "tfc": false,
+        "onehop": true,
+        "d_max": 1,
+        "embed": false
+      }
+    },
+    {
+      "variant": "A1",
+      "desc": "BiBFS only (Inv1)",
+      "n": 500,
+      "correct": 117,
+      "overall_hits@1": 23.4,
+      "path_hit@80": 56.6,
+      "avg_paths": 73.724,
+      "wall_sec": 82.49507451057434,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 22,
+          "hits@1": 16.296296296296298
+        },
+        "Single": {
+          "total": 365,
+          "correct": 95,
+          "hits@1": 26.027397260273972
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 8,
+          "hits@1": 16.3265306122449
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 19,
+          "hits@1": 17.59259259259259
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 8,
+          "hits@1": 12.698412698412698
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 29,
+          "hits@1": 28.431372549019606
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 88,
+          "hits@1": 25.507246376811594
+        },
+        "time": {
+          "total": 155,
+          "correct": 29,
+          "hits@1": 18.70967741935484
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 54,
+          "hits@1": 17.704918032786885
+        },
+        "year": {
+          "total": 94,
+          "correct": 29,
+          "hits@1": 30.851063829787233
+        },
+        "month": {
+          "total": 101,
+          "correct": 34,
+          "hits@1": 33.663366336633665
+        }
+      },
+      "spec": {
+        "desc": "BiBFS only (Inv1)",
+        "bibfs": true,
+        "egor": false,
+        "tfc": false,
+        "onehop": false,
+        "d_max": 3,
+        "embed": true
+      }
+    },
+    {
+      "variant": "A2",
+      "desc": "BiBFS+EGOR (Inv1+2)",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 235.75494289398193,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "BiBFS+EGOR (Inv1+2)",
+        "bibfs": true,
+        "egor": true,
+        "tfc": false,
+        "onehop": false,
+        "d_max": 3,
+        "embed": true
+      }
+    },
+    {
+      "variant": "A3",
+      "desc": "BiBFS+TFC (Inv1+3)",
+      "n": 500,
+      "correct": 117,
+      "overall_hits@1": 23.4,
+      "path_hit@80": 56.6,
+      "avg_paths": 73.724,
+      "wall_sec": 5.211048364639282,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 22,
+          "hits@1": 16.296296296296298
+        },
+        "Single": {
+          "total": 365,
+          "correct": 95,
+          "hits@1": 26.027397260273972
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 8,
+          "hits@1": 16.3265306122449
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 19,
+          "hits@1": 17.59259259259259
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 8,
+          "hits@1": 12.698412698412698
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 29,
+          "hits@1": 28.431372549019606
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 88,
+          "hits@1": 25.507246376811594
+        },
+        "time": {
+          "total": 155,
+          "correct": 29,
+          "hits@1": 18.70967741935484
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 54,
+          "hits@1": 17.704918032786885
+        },
+        "year": {
+          "total": 94,
+          "correct": 29,
+          "hits@1": 30.851063829787233
+        },
+        "month": {
+          "total": 101,
+          "correct": 34,
+          "hits@1": 33.663366336633665
+        }
+      },
+      "spec": {
+        "desc": "BiBFS+TFC (Inv1+3)",
+        "bibfs": true,
+        "egor": false,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 3,
+        "embed": true
+      }
+    },
+    {
+      "variant": "FULL",
+      "desc": "BiBFS+EGOR+TFC",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 210.61432361602783,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "BiBFS+EGOR+TFC",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 3,
+        "embed": true
+      }
+    },
+    {
+      "variant": "H1",
+      "desc": "FULL D_max=1",
+      "n": 500,
+      "correct": 121,
+      "overall_hits@1": 24.2,
+      "path_hit@80": 60.2,
+      "avg_paths": 72.444,
+      "wall_sec": 15.481431484222412,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 11,
+          "hits@1": 8.148148148148149
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 3,
+          "hits@1": 6.122448979591836
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 2,
+          "hits@1": 3.1746031746031744
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 93,
+          "hits@1": 26.956521739130434
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 54,
+          "hits@1": 17.704918032786885
+        },
+        "year": {
+          "total": 94,
+          "correct": 32,
+          "hits@1": 34.04255319148936
+        },
+        "month": {
+          "total": 101,
+          "correct": 35,
+          "hits@1": 34.65346534653465
+        }
+      },
+      "spec": {
+        "desc": "FULL D_max=1",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 1,
+        "embed": true
+      }
+    },
+    {
+      "variant": "H2",
+      "desc": "FULL D_max=2",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 211.42253613471985,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "FULL D_max=2",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 2,
+        "embed": true
+      }
+    },
+    {
+      "variant": "H3",
+      "desc": "FULL D_max=3 paper",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 212.44290494918823,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "FULL D_max=3 paper",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 3,
+        "embed": true
+      }
+    },
+    {
+      "variant": "S1",
+      "desc": "FULL lexical Score",
+      "n": 500,
+      "correct": 117,
+      "overall_hits@1": 23.4,
+      "path_hit@80": 57.4,
+      "avg_paths": 72.1,
+      "wall_sec": 211.39961791038513,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 10,
+          "hits@1": 7.407407407407407
+        },
+        "Single": {
+          "total": 365,
+          "correct": 107,
+          "hits@1": 29.315068493150687
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 1,
+          "hits@1": 2.0408163265306123
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 14,
+          "hits@1": 12.962962962962964
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 48,
+          "hits@1": 30.967741935483872
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 92,
+          "hits@1": 26.666666666666668
+        },
+        "time": {
+          "total": 155,
+          "correct": 25,
+          "hits@1": 16.129032258064516
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 52,
+          "hits@1": 17.049180327868854
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 34,
+          "hits@1": 33.663366336633665
+        }
+      },
+      "spec": {
+        "desc": "FULL lexical Score",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 3,
+        "embed": false
+      }
+    },
+    {
+      "variant": "S2",
+      "desc": "FULL GPU embed Score",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 212.1781666278839,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "FULL GPU embed Score",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "d_max": 3,
+        "embed": true
+      }
+    }
+  ],
+  "innovations": [
+    "Inv1 Monotone BiBFS + Adaptive D_pred + temporal beam + Score(p)",
+    "Inv2 Experience-Guided Operator Routing (EGOR)",
+    "Inv3 Temporal Faithfulness Critic (TFC)"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "comparison_dir": "E:\\cursor-code\\TKG1\\MemoTime-main\\MemoTime-main\\results\\paper\\comparison_20261108_180343",
+  "by_qlabel": {
+    "Multiple": {
+      "n": 135,
+      "full_ok": 14,
+      "nop_ok": 13,
+      "full_hits1_pct": 10.37037037037037,
+      "noprox_hits1_pct": 9.62962962962963,
+      "delta_pp": -0.7407407407407407
+    },
+    "Single": {
+      "n": 365,
+      "full_ok": 110,
+      "nop_ok": 115,
+      "full_hits1_pct": 30.136986301369863,
+      "noprox_hits1_pct": 31.506849315068493,
+      "delta_pp": 1.36986301369863
+    }
+  },
+  "by_qtype": {
+    "after_first": {
+      "n": 49,
+      "full_ok": 5,
+      "nop_ok": 4,
+      "full_hits1_pct": 10.204081632653061,
+      "noprox_hits1_pct": 8.16326530612245,
+      "delta_pp": -2.0408163265306123
+    },
+    "before_after": {
+      "n": 102,
+      "full_ok": 45,
+      "nop_ok": 46,
+      "full_hits1_pct": 44.11764705882353,
+      "noprox_hits1_pct": 45.09803921568628,
+      "delta_pp": 0.9803921568627451
+    },
+    "before_last": {
+      "n": 63,
+      "full_ok": 3,
+      "nop_ok": 3,
+      "full_hits1_pct": 4.761904761904762,
+      "noprox_hits1_pct": 4.761904761904762,
+      "delta_pp": 0.0
+    },
+    "equal": {
+      "n": 155,
+      "full_ok": 47,
+      "nop_ok": 51,
+      "full_hits1_pct": 30.322580645161292,
+      "noprox_hits1_pct": 32.903225806451616,
+      "delta_pp": 2.5806451612903225
+    },
+    "equal_multi": {
+      "n": 23,
+      "full_ok": 6,
+      "nop_ok": 6,
+      "full_hits1_pct": 26.08695652173913,
+      "noprox_hits1_pct": 26.08695652173913,
+      "delta_pp": 0.0
+    },
+    "first_last": {
+      "n": 108,
+      "full_ok": 18,
+      "nop_ok": 18,
+      "full_hits1_pct": 16.666666666666668,
+      "noprox_hits1_pct": 16.666666666666668,
+      "delta_pp": 0.0
+    }
+  },
+  "overall_delta_pp": 0.8
+}

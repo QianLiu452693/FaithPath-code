@@ -1,0 +1,3269 @@
+{
+  "summary": {
+    "variant": "A1",
+    "desc": "BiBFS only (Inv1)",
+    "n": 200,
+    "correct": 48,
+    "overall_hits@1": 24.0,
+    "path_hit@80": 57.5,
+    "avg_paths": 74.205,
+    "wall_sec": 45.48126411437988,
+    "by_qlabel": {
+      "Multiple": {
+        "total": 48,
+        "correct": 9,
+        "hits@1": 18.75
+      },
+      "Single": {
+        "total": 152,
+        "correct": 39,
+        "hits@1": 25.657894736842106
+      }
+    },
+    "by_qtype": {
+      "after_first": {
+        "total": 14,
+        "correct": 4,
+        "hits@1": 28.571428571428573
+      },
+      "first_last": {
+        "total": 50,
+        "correct": 7,
+        "hits@1": 14.0
+      },
+      "before_last": {
+        "total": 27,
+        "correct": 3,
+        "hits@1": 11.11111111111111
+      },
+      "before_after": {
+        "total": 46,
+        "correct": 15,
+        "hits@1": 32.608695652173914
+      },
+      "equal_multi": {
+        "total": 7,
+        "correct": 2,
+        "hits@1": 28.571428571428573
+      },
+      "equal": {
+        "total": 56,
+        "correct": 17,
+        "hits@1": 30.357142857142858
+      }
+    },
+    "by_answer_type": {
+      "entity": {
+        "total": 132,
+        "correct": 38,
+        "hits@1": 28.78787878787879
+      },
+      "time": {
+        "total": 68,
+        "correct": 10,
+        "hits@1": 14.705882352941176
+      }
+    },
+    "by_time_level": {
+      "day": {
+        "total": 118,
+        "correct": 21,
+        "hits@1": 17.796610169491526
+      },
+      "year": {
+        "total": 43,
+        "correct": 15,
+        "hits@1": 34.883720930232556
+      },
+      "month": {
+        "total": 39,
+        "correct": 12,
+        "hits@1": 30.76923076923077
+      }
+    },
+    "spec": {
+      "desc": "BiBFS only (Inv1)",
+      "bibfs": true,
+      "egor": false,
+      "tfc": false,
+      "onehop": false,
+      "d_max": 3,
+      "embed": true
+    }
+  },
+  "results": [
+    {
+      "qid": "3000000",
+      "is_correct": true,
+      "final_answer": "Jack_Straw",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Jack Straw"
+      ]
+    },
+    {
+      "qid": "3000001",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Citizen (North Korea)"
+      ]
+    },
+    {
+      "qid": "3000002",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2010"
+      ]
+    },
+    {
+      "qid": "3000003",
+      "is_correct": false,
+      "final_answer": "2007-01-31",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2007-02-01"
+      ]
+    },
+    {
+      "qid": "3000004",
+      "is_correct": false,
+      "final_answer": "China",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Wen Jiabao"
+      ]
+    },
+    {
+      "qid": "3000005",
+      "is_correct": false,
+      "final_answer": "Seyoum_Mesfin",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Djibouti"
+      ]
+    },
+    {
+      "qid": "3000006",
+      "is_correct": true,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005"
+      ]
+    },
+    {
+      "qid": "3000007",
+      "is_correct": true,
+      "final_answer": "Sudan",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "China",
+        "Sudan"
+      ]
+    },
+    {
+      "qid": "3000008",
+      "is_correct": false,
+      "final_answer": "France",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Japan",
+        "Barnaby Joyce",
+        "Media Personnel (International)",
+        "Vietnam",
+        "Xi Jinping",
+        "Ibrahim Boubacar Keïta",
+        "Airline (Bulgaria)",
+        "Le Hong Anh",
+        "Vincent Gray",
+        "Abdulla Yameen",
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000009",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Kuomintang",
+        "South Korea",
+        "Colombia",
+        "France",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000010",
+      "is_correct": false,
+      "final_answer": "2006",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2009"
+      ]
+    },
+    {
+      "qid": "3000011",
+      "is_correct": false,
+      "final_answer": "Other_Authorities_/_Officials_(Burundi)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Al-Shabaab",
+        "Military (Burundi)"
+      ]
+    },
+    {
+      "qid": "3000012",
+      "is_correct": false,
+      "final_answer": "China",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 64,
+      "path_hit@80": true,
+      "golds": [
+        "Armed Gang (Thailand)",
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000013",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Commando (Iraq)"
+      ]
+    },
+    {
+      "qid": "3000014",
+      "is_correct": false,
+      "final_answer": "Abdullah_Gül",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Head of Government (Egypt)"
+      ]
+    },
+    {
+      "qid": "3000015",
+      "is_correct": false,
+      "final_answer": "Jack_Straw",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 29,
+      "path_hit@80": true,
+      "golds": [
+        "Iran"
+      ]
+    },
+    {
+      "qid": "3000016",
+      "is_correct": false,
+      "final_answer": "Taiwan_Affairs_Office",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Angela Merkel"
+      ]
+    },
+    {
+      "qid": "3000017",
+      "is_correct": false,
+      "final_answer": "Party_Member_(Iraq)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 49,
+      "path_hit@80": false,
+      "golds": [
+        "Presidential Family (United States)",
+        "Shaukat Aziz",
+        "Sudan",
+        "Pervez Musharraf",
+        "Saud bin Faisal bin Abdul-Aziz",
+        "Jack Straw",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000018",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "China",
+        "Association of Southeast Asian Nations"
+      ]
+    },
+    {
+      "qid": "3000019",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000020",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000021",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2007-01"
+      ]
+    },
+    {
+      "qid": "3000022",
+      "is_correct": false,
+      "final_answer": "2005-05",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-06"
+      ]
+    },
+    {
+      "qid": "3000023",
+      "is_correct": false,
+      "final_answer": "2005-03",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2010-03"
+      ]
+    },
+    {
+      "qid": "3000024",
+      "is_correct": true,
+      "final_answer": "2005-03-21",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-03-21"
+      ]
+    },
+    {
+      "qid": "3000025",
+      "is_correct": false,
+      "final_answer": "2015",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2014"
+      ]
+    },
+    {
+      "qid": "3000026",
+      "is_correct": false,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "National United Front for Democracy Against Dictatorship"
+      ]
+    },
+    {
+      "qid": "3000027",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 55,
+      "path_hit@80": false,
+      "golds": [
+        "2008-12"
+      ]
+    },
+    {
+      "qid": "3000028",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Mahmoud Abbas",
+        "Thailand",
+        "Association of Southeast Asian Nations",
+        "Iran",
+        "Japan",
+        "Government (Palestinian Territory, Occupied)",
+        "Nonaligned Movement",
+        "Tony Blair",
+        "Iraq"
+      ]
+    },
+    {
+      "qid": "3000029",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Nuri al-Maliki",
+        "Iran",
+        "Congress (United States)",
+        "Foreign Affairs (Syria)",
+        "Foreign Affairs (Italy)",
+        "Foreign Affairs (India)"
+      ]
+    },
+    {
+      "qid": "3000030",
+      "is_correct": true,
+      "final_answer": "2015",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2015"
+      ]
+    },
+    {
+      "qid": "3000031",
+      "is_correct": true,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000032",
+      "is_correct": false,
+      "final_answer": "2009-09-25",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2010-04-24"
+      ]
+    },
+    {
+      "qid": "3000033",
+      "is_correct": true,
+      "final_answer": "China",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "China",
+        "Malaysia"
+      ]
+    },
+    {
+      "qid": "3000034",
+      "is_correct": false,
+      "final_answer": "2006-05-31",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2006-09-23"
+      ]
+    },
+    {
+      "qid": "3000035",
+      "is_correct": false,
+      "final_answer": "Cabinet_/_Council_of_Ministers_/_Advisors_(United_States)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Surakiart Sathirathai",
+        "Vietnam",
+        "Employee (Bangladesh)",
+        "Mahmoud Ahmadinejad",
+        "Laos",
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000036",
+      "is_correct": false,
+      "final_answer": "Thailand",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000037",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2009"
+      ]
+    },
+    {
+      "qid": "3000038",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2007"
+      ]
+    },
+    {
+      "qid": "3000039",
+      "is_correct": false,
+      "final_answer": "2007",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2010"
+      ]
+    },
+    {
+      "qid": "3000040",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Energy Department/Ministry (United States)",
+        "Admiral (China)"
+      ]
+    },
+    {
+      "qid": "3000041",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000042",
+      "is_correct": false,
+      "final_answer": "2005-01-06",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-06-06"
+      ]
+    },
+    {
+      "qid": "3000043",
+      "is_correct": false,
+      "final_answer": "Head_of_Government_(Germany)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Qatar"
+      ]
+    },
+    {
+      "qid": "3000044",
+      "is_correct": false,
+      "final_answer": "Iran",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Barack Obama",
+        "Nuri al-Maliki",
+        "China",
+        "Japan",
+        "Supreme Council (Iraq)",
+        "Vietnam"
+      ]
+    },
+    {
+      "qid": "3000045",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Armed Rebel (Syria)",
+        "Israeli Defense Forces"
+      ]
+    },
+    {
+      "qid": "3000046",
+      "is_correct": false,
+      "final_answer": "Kuwait",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Barack Obama",
+        "Iran",
+        "Nuri al-Maliki",
+        "Member of Parliament (Iraq)",
+        "Defense / Security Ministry (United States)",
+        "Student (Iraq)",
+        "Congress (United States)",
+        "Bank (Iraq)"
+      ]
+    },
+    {
+      "qid": "3000047",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000048",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Hui Liangyu",
+        "Iran",
+        "UAE Armed Forces",
+        "Foreign Affairs (South Korea)",
+        "Dmitry Anatolyevich Medvedev",
+        "Linda Lingle",
+        "Wen Jiabao",
+        "Mahmoud Ahmadinejad",
+        "Joon Young Woo",
+        "International Government Organizations",
+        "Ministry (Iran)",
+        "Boris Vyacheslavovich Gryzlov",
+        "Valdis Dombrovskis",
+        "Dianne Feinstein"
+      ]
+    },
+    {
+      "qid": "3000049",
+      "is_correct": false,
+      "final_answer": "Iraq",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Sergey Kuzhugetovich Shoygu"
+      ]
+    },
+    {
+      "qid": "3000050",
+      "is_correct": false,
+      "final_answer": "2014",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2015"
+      ]
+    },
+    {
+      "qid": "3000051",
+      "is_correct": false,
+      "final_answer": "Wen_Jiabao",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Sudan"
+      ]
+    },
+    {
+      "qid": "3000052",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2008"
+      ]
+    },
+    {
+      "qid": "3000053",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 12,
+      "path_hit@80": false,
+      "golds": [
+        "2012-04"
+      ]
+    },
+    {
+      "qid": "3000054",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "South Korea",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000055",
+      "is_correct": false,
+      "final_answer": "Iraq",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 24,
+      "path_hit@80": true,
+      "golds": [
+        "South Korea"
+      ]
+    },
+    {
+      "qid": "3000056",
+      "is_correct": false,
+      "final_answer": "Combatant_(Al_Qaeda)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Royal Administration (Saudi Arabia)"
+      ]
+    },
+    {
+      "qid": "3000057",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2015"
+      ]
+    },
+    {
+      "qid": "3000058",
+      "is_correct": false,
+      "final_answer": "France",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Hui Liangyu"
+      ]
+    },
+    {
+      "qid": "3000059",
+      "is_correct": false,
+      "final_answer": "Indigenous_People_(Taiwan)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Vietnam",
+        "Abhisit Vejjajiva",
+        "China",
+        "Thailand"
+      ]
+    },
+    {
+      "qid": "3000060",
+      "is_correct": false,
+      "final_answer": "Yemen",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Armed Rebel (Somalia)"
+      ]
+    },
+    {
+      "qid": "3000061",
+      "is_correct": false,
+      "final_answer": "Thailand",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Vietnam",
+        "East Turkistan Islamic Movement",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000062",
+      "is_correct": true,
+      "final_answer": "Wen_Jiabao",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Wen Jiabao"
+      ]
+    },
+    {
+      "qid": "3000063",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2013"
+      ]
+    },
+    {
+      "qid": "3000064",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "UN Security Council",
+        "Citizen (Unidentified State Actor)",
+        "Citizen (Thailand)",
+        "Barack Obama",
+        "Chuck Hagel",
+        "Maldives",
+        "Vietnam",
+        "China"
+      ]
+    },
+    {
+      "qid": "3000065",
+      "is_correct": false,
+      "final_answer": "Iraq",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Government Delegation (Fiji)",
+        "Ali Jannati"
+      ]
+    },
+    {
+      "qid": "3000066",
+      "is_correct": true,
+      "final_answer": "2006",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2006"
+      ]
+    },
+    {
+      "qid": "3000067",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 64,
+      "path_hit@80": false,
+      "golds": [
+        "2013-03"
+      ]
+    },
+    {
+      "qid": "3000068",
+      "is_correct": true,
+      "final_answer": "2009-09-01",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2009-09-01"
+      ]
+    },
+    {
+      "qid": "3000069",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2014"
+      ]
+    },
+    {
+      "qid": "3000070",
+      "is_correct": true,
+      "final_answer": "Thailand",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Thailand"
+      ]
+    },
+    {
+      "qid": "3000071",
+      "is_correct": false,
+      "final_answer": "2010",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005"
+      ]
+    },
+    {
+      "qid": "3000072",
+      "is_correct": false,
+      "final_answer": "Eritrea",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Al-Shabaab"
+      ]
+    },
+    {
+      "qid": "3000073",
+      "is_correct": true,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 28,
+      "path_hit@80": true,
+      "golds": [
+        "2005"
+      ]
+    },
+    {
+      "qid": "3000074",
+      "is_correct": false,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "National United Front for Democracy Against Dictatorship",
+        "Abhisit Vejjajiva",
+        "Worachai Hema",
+        "Protester (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000075",
+      "is_correct": false,
+      "final_answer": "2007-03",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2010-03"
+      ]
+    },
+    {
+      "qid": "3000076",
+      "is_correct": true,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005"
+      ]
+    },
+    {
+      "qid": "3000077",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Criminal (South Korea)",
+        "Business (South Korea)",
+        "Grand National Party"
+      ]
+    },
+    {
+      "qid": "3000078",
+      "is_correct": true,
+      "final_answer": "2014-04",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2014-04"
+      ]
+    },
+    {
+      "qid": "3000079",
+      "is_correct": false,
+      "final_answer": "Lawmaker_(Japan)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Ai Weiwei"
+      ]
+    },
+    {
+      "qid": "3000080",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Malaysia"
+      ]
+    },
+    {
+      "qid": "3000081",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2010-09"
+      ]
+    },
+    {
+      "qid": "3000082",
+      "is_correct": false,
+      "final_answer": "Seyoum_Mesfin",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Government (Qatar)",
+        "Activist (Ethiopia)",
+        "Qatar",
+        "Al-Shabaab",
+        "Eritrea",
+        "Sudan"
+      ]
+    },
+    {
+      "qid": "3000083",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Dissident (China)",
+        "Association of Southeast Asian Nations",
+        "Ali Baqeri",
+        "Vietnam",
+        "Sudan",
+        "South Korea",
+        "European Central Bank",
+        "France",
+        "Foreign Affairs (France)",
+        "Ma Ying Jeou",
+        "Cabinet / Council of Ministers / Advisors (United States)",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000084",
+      "is_correct": false,
+      "final_answer": "2005-01-04",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2007-07-08"
+      ]
+    },
+    {
+      "qid": "3000085",
+      "is_correct": false,
+      "final_answer": "China",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 64,
+      "path_hit@80": true,
+      "golds": [
+        "Student (Thailand)",
+        "Vietnam",
+        "Children (Thailand)",
+        "South Korea",
+        "Citizen (Thailand)",
+        "Cabinet / Council of Ministers / Advisors (Thailand)",
+        "Men (United States)",
+        "Cambodia"
+      ]
+    },
+    {
+      "qid": "3000086",
+      "is_correct": false,
+      "final_answer": "City_Mayor_(Greece)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Head of Government (Egypt)"
+      ]
+    },
+    {
+      "qid": "3000087",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-06"
+      ]
+    },
+    {
+      "qid": "3000088",
+      "is_correct": false,
+      "final_answer": "2005-09-15",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2006-06-14"
+      ]
+    },
+    {
+      "qid": "3000089",
+      "is_correct": false,
+      "final_answer": "2005-01-04",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2007-05-24"
+      ]
+    },
+    {
+      "qid": "3000090",
+      "is_correct": false,
+      "final_answer": "2005-04-11",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2012-02-03"
+      ]
+    },
+    {
+      "qid": "3000091",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2011-08"
+      ]
+    },
+    {
+      "qid": "3000092",
+      "is_correct": false,
+      "final_answer": "Combatant_(Al_Qaeda)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Islamic Preacher (Saudi Arabia)",
+        "Royal Administration (Saudi Arabia)"
+      ]
+    },
+    {
+      "qid": "3000093",
+      "is_correct": false,
+      "final_answer": "Naval_(United_States)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Ma Ying Jeou"
+      ]
+    },
+    {
+      "qid": "3000094",
+      "is_correct": true,
+      "final_answer": "Norodom_Sihanouk",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 40,
+      "path_hit@80": true,
+      "golds": [
+        "South Africa",
+        "China",
+        "Angola",
+        "Norodom Sihanouk"
+      ]
+    },
+    {
+      "qid": "3000095",
+      "is_correct": false,
+      "final_answer": "Angola",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Lesotho"
+      ]
+    },
+    {
+      "qid": "3000096",
+      "is_correct": false,
+      "final_answer": "2005-01-13",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2011-03-11"
+      ]
+    },
+    {
+      "qid": "3000097",
+      "is_correct": false,
+      "final_answer": "Ismaïl_Omar_Guelleh",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Al-Shabaab",
+        "Eritrea",
+        "African Union"
+      ]
+    },
+    {
+      "qid": "3000098",
+      "is_correct": false,
+      "final_answer": "City_Mayor_(Philippines)",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 66,
+      "path_hit@80": true,
+      "golds": [
+        "Edgard Arevalo",
+        "Police (Philippines)"
+      ]
+    },
+    {
+      "qid": "3000099",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2010-09"
+      ]
+    },
+    {
+      "qid": "3000100",
+      "is_correct": false,
+      "final_answer": "Eritrea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "China",
+        "African Union",
+        "Mahamat Saleh Annadif"
+      ]
+    },
+    {
+      "qid": "3000101",
+      "is_correct": true,
+      "final_answer": "Vietnam",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Vietnam"
+      ]
+    },
+    {
+      "qid": "3000102",
+      "is_correct": false,
+      "final_answer": "Human_Rights_Watch",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Vietnam"
+      ]
+    },
+    {
+      "qid": "3000103",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Business (Germany)"
+      ]
+    },
+    {
+      "qid": "3000104",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Barack Obama",
+        "Iran",
+        "Asylum Seeker (Iraq)",
+        "China",
+        "Adil Abdul-Mahdi",
+        "Party Member (United Kingdom)",
+        "Haider Al-Abadi",
+        "Massoud Barzani",
+        "Eshaq Jahangiri"
+      ]
+    },
+    {
+      "qid": "3000105",
+      "is_correct": false,
+      "final_answer": "Mainland_Affairs_Council",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000106",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2015"
+      ]
+    },
+    {
+      "qid": "3000107",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": false,
+      "golds": [
+        "Mikhail Yefimovich Fradkov"
+      ]
+    },
+    {
+      "qid": "3000108",
+      "is_correct": false,
+      "final_answer": "2005-01-14",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2009-04-17"
+      ]
+    },
+    {
+      "qid": "3000109",
+      "is_correct": true,
+      "final_answer": "China",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Iran",
+        "Japan",
+        "Royal Administration (Pakistan)",
+        "Jens Stoltenberg",
+        "Tony Blair",
+        "Pervez Musharraf",
+        "Kazakhstan",
+        "Maumoon Abdul Gayoom",
+        "The Poor (Pakistan)",
+        "Government (Pakistan)",
+        "International Government Organizations",
+        "China",
+        "Pakistan administered Kashmir"
+      ]
+    },
+    {
+      "qid": "3000110",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 48,
+      "path_hit@80": true,
+      "golds": [
+        "Federal Emergency Management Agency",
+        "Kuwait",
+        "Iran"
+      ]
+    },
+    {
+      "qid": "3000111",
+      "is_correct": false,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Director General (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000112",
+      "is_correct": false,
+      "final_answer": "2005-01-07",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 52,
+      "path_hit@80": false,
+      "golds": [
+        "2008-07-22"
+      ]
+    },
+    {
+      "qid": "3000113",
+      "is_correct": false,
+      "final_answer": "France",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Romania"
+      ]
+    },
+    {
+      "qid": "3000114",
+      "is_correct": false,
+      "final_answer": "2014-10-08",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2009-07-06"
+      ]
+    },
+    {
+      "qid": "3000115",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": false,
+      "golds": [
+        "Xi Jinping"
+      ]
+    },
+    {
+      "qid": "3000116",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Malaysia",
+        "Joschka Fischer",
+        "Japan Self-Defense Forces",
+        "Jack Straw",
+        "Foreign Affairs (Italy)",
+        "Treasury/Finance Ministry (Cambodia)",
+        "Cabinet / Council of Ministers / Advisors (United States)"
+      ]
+    },
+    {
+      "qid": "3000117",
+      "is_correct": false,
+      "final_answer": "2005-03-09",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2015-03-05"
+      ]
+    },
+    {
+      "qid": "3000118",
+      "is_correct": false,
+      "final_answer": "Seyoum_Mesfin",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Hawiye (ethnic)",
+        "Activist (Ethiopia)",
+        "Detainee (Ethiopia)",
+        "Lawyer/Attorney (Ethiopia)"
+      ]
+    },
+    {
+      "qid": "3000119",
+      "is_correct": false,
+      "final_answer": "Sheikh_Ahmed_Abdullah",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "China",
+        "Iran",
+        "United Arab Emirates",
+        "Qatar"
+      ]
+    },
+    {
+      "qid": "3000120",
+      "is_correct": true,
+      "final_answer": "Japan",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 12,
+      "path_hit@80": true,
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000121",
+      "is_correct": true,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000122",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Henry M. Paulson",
+        "Xi Jinping",
+        "Romania",
+        "Lee Myung Bak",
+        "Thailand",
+        "Cabinet / Council of Ministers / Advisors (United States)",
+        "Women (China)",
+        "Head of Government (Greece)",
+        "Japan",
+        "Director General (China)",
+        "Vietnam",
+        "Mainland Affairs Council",
+        "Kim Kye Gwan",
+        "Zhang Dejiang",
+        "South Korea",
+        "Kazakhstan",
+        "South Africa",
+        "Citizen (Brazil)",
+        "Straits Exchange Foundation",
+        "Ma Ying Jeou"
+      ]
+    },
+    {
+      "qid": "3000123",
+      "is_correct": false,
+      "final_answer": "Frank_Bainimarama",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Representatives (Malaysia)"
+      ]
+    },
+    {
+      "qid": "3000124",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2012"
+      ]
+    },
+    {
+      "qid": "3000125",
+      "is_correct": false,
+      "final_answer": "China",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 64,
+      "path_hit@80": true,
+      "golds": [
+        "Cambodia",
+        "South Korea"
+      ]
+    },
+    {
+      "qid": "3000126",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Holy See",
+        "Mainland Affairs Council",
+        "Robert Jones Portman",
+        "Lawmaker (Hong Kong)",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000127",
+      "is_correct": false,
+      "final_answer": "Iran",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000128",
+      "is_correct": false,
+      "final_answer": "Thailand",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000129",
+      "is_correct": true,
+      "final_answer": "Thailand",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "High Commission for Refugees",
+        "Vietnam",
+        "Ministry (Vietnam)",
+        "Thailand",
+        "Laos",
+        "China",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000130",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Nuri al-Maliki"
+      ]
+    },
+    {
+      "qid": "3000131",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 10,
+      "path_hit@80": false,
+      "golds": [
+        "Republic of South Ossetia"
+      ]
+    },
+    {
+      "qid": "3000132",
+      "is_correct": false,
+      "final_answer": "2005-07-29",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2007-10-08"
+      ]
+    },
+    {
+      "qid": "3000133",
+      "is_correct": false,
+      "final_answer": "Citizen_(United_Kingdom)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Prime Minister Qarase"
+      ]
+    },
+    {
+      "qid": "3000134",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2014"
+      ]
+    },
+    {
+      "qid": "3000135",
+      "is_correct": false,
+      "final_answer": "Police_(Philippines)",
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 66,
+      "path_hit@80": true,
+      "golds": [
+        "City Mayor (Philippines)"
+      ]
+    },
+    {
+      "qid": "3000136",
+      "is_correct": false,
+      "final_answer": "2006-01-24",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2007-09-17"
+      ]
+    },
+    {
+      "qid": "3000137",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Khandu Wangchuk"
+      ]
+    },
+    {
+      "qid": "3000138",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "China"
+      ]
+    },
+    {
+      "qid": "3000139",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Rafael Correa",
+        "South Korea",
+        "Wang Yi",
+        "Thailand",
+        "Niger",
+        "Khaled Bahah",
+        "Medical Personnel (Russia)",
+        "Cristina Fernández de Kirchner",
+        "Foreign Affairs (India)"
+      ]
+    },
+    {
+      "qid": "3000140",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Takahiro Yokomichi",
+        "South Korea",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000141",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": false,
+      "golds": [
+        "Mainland Affairs Council",
+        "Ma Ying Jeou"
+      ]
+    },
+    {
+      "qid": "3000142",
+      "is_correct": false,
+      "final_answer": "2005-02-16",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2013-06-28"
+      ]
+    },
+    {
+      "qid": "3000143",
+      "is_correct": false,
+      "final_answer": "2005-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2014-06"
+      ]
+    },
+    {
+      "qid": "3000144",
+      "is_correct": false,
+      "final_answer": "Mswati_III",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "France",
+        "Lesotho"
+      ]
+    },
+    {
+      "qid": "3000145",
+      "is_correct": true,
+      "final_answer": "Thailand",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Head of Government (India)",
+        "Abhisit Vejjajiva",
+        "Association of Southeast Asian Nations",
+        "Foreign Affairs (South Korea)",
+        "Vietnam",
+        "Xi Jinping",
+        "South Korea",
+        "Military Personnel (Thailand)",
+        "Citizen (Thailand)",
+        "George Yeo",
+        "Okada Katsuya",
+        "Justice Department/Ministery (Thailand)",
+        "Thailand",
+        "Lee Myung Bak",
+        "Head of Government (Colombia)",
+        "Laos",
+        "Citizen (United Kingdom)",
+        "China"
+      ]
+    },
+    {
+      "qid": "3000146",
+      "is_correct": false,
+      "final_answer": "Military_(El_Salvador)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Iran",
+        "Defense / Security Ministry (United States)",
+        "Philip Hammond",
+        "Nicos Anastasiades",
+        "Chongwadai",
+        "Guy Ryder",
+        "Massoud Barzani",
+        "Abdullah Gül",
+        "Abdel Fattah Al-Sisi",
+        "Member of Legislative (Govt) (Iran)",
+        "Foreign Affairs (Italy)",
+        "Royal Administration (Saudi Arabia)",
+        "Head of Government (Sweden)",
+        "Qatar"
+      ]
+    },
+    {
+      "qid": "3000147",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": false,
+      "golds": [
+        "Mwai Kibaki"
+      ]
+    },
+    {
+      "qid": "3000148",
+      "is_correct": false,
+      "final_answer": "2005-04-13",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2006-03-12"
+      ]
+    },
+    {
+      "qid": "3000149",
+      "is_correct": false,
+      "final_answer": "Men_(Cambodia)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "United Nations Children's Fund",
+        "Vietnam",
+        "China",
+        "Japan",
+        "Roh Moo Hyun"
+      ]
+    },
+    {
+      "qid": "3000150",
+      "is_correct": false,
+      "final_answer": "Iraq",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "France"
+      ]
+    },
+    {
+      "qid": "3000151",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Nuri al-Maliki",
+        "Iran",
+        "Party Member (Iraq)",
+        "Citizen (Saudi Arabia)",
+        "Barack Obama",
+        "Abdullah Gül",
+        "Tzipi Livni",
+        "Mahmoud Ahmadinejad",
+        "China",
+        "Royal Administration (Jordan)",
+        "Military (El Salvador)",
+        "Ali al-Dabbagh",
+        "Business (Germany)",
+        "Japan",
+        "Council of Representatives"
+      ]
+    },
+    {
+      "qid": "3000152",
+      "is_correct": false,
+      "final_answer": "2005-03",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2010-04"
+      ]
+    },
+    {
+      "qid": "3000153",
+      "is_correct": false,
+      "final_answer": "Ali_Abdullah_Saleh",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "International Monetary Fund"
+      ]
+    },
+    {
+      "qid": "3000154",
+      "is_correct": false,
+      "final_answer": "2005-01-22",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-01-25"
+      ]
+    },
+    {
+      "qid": "3000155",
+      "is_correct": false,
+      "final_answer": "2005-01-22",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2013-03-05"
+      ]
+    },
+    {
+      "qid": "3000156",
+      "is_correct": false,
+      "final_answer": "2006",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2007"
+      ]
+    },
+    {
+      "qid": "3000157",
+      "is_correct": false,
+      "final_answer": "2007-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2006-06"
+      ]
+    },
+    {
+      "qid": "3000158",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "South Korea",
+        "Assemblies (Cambodia)",
+        "Ma Ying Jeou"
+      ]
+    },
+    {
+      "qid": "3000159",
+      "is_correct": false,
+      "final_answer": "Lawmaker_(Japan)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Xiao Yang",
+        "Media Personnel (Pakistan)",
+        "Police (Cambodia)",
+        "Vietnam",
+        "Police (Australia)"
+      ]
+    },
+    {
+      "qid": "3000160",
+      "is_correct": true,
+      "final_answer": "Citizen_(Zambia)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Political Parties (Zambia)",
+        "Government (South Africa)",
+        "Mahmoud Ahmadinejad",
+        "Rupiah Banda",
+        "Islam Karimov",
+        "Charles Milupi",
+        "South Africa",
+        "National Restoration Party",
+        "Elizabeth II",
+        "Citizen (Zambia)",
+        "Archbishop (Zambia)"
+      ]
+    },
+    {
+      "qid": "3000161",
+      "is_correct": true,
+      "final_answer": "South_Korea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 54,
+      "path_hit@80": true,
+      "golds": [
+        "Association of Southeast Asian Nations",
+        "South Korea",
+        "Japan",
+        "France"
+      ]
+    },
+    {
+      "qid": "3000162",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Raúl Castro",
+        "Indigenous People (Bangladesh)",
+        "Thailand",
+        "Moro Islamic Liberation Front",
+        "Moro National Liberation Front",
+        "Ali Abdullah Saleh",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000163",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2014"
+      ]
+    },
+    {
+      "qid": "3000164",
+      "is_correct": true,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005"
+      ]
+    },
+    {
+      "qid": "3000165",
+      "is_correct": true,
+      "final_answer": "2011",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2011"
+      ]
+    },
+    {
+      "qid": "3000166",
+      "is_correct": false,
+      "final_answer": "2005-01-01",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2012-03-13"
+      ]
+    },
+    {
+      "qid": "3000167",
+      "is_correct": false,
+      "final_answer": "Eritrea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Jakaya Mrisho Kikwete",
+        "African Union",
+        "Mwai Kibaki",
+        "Rupiah Banda",
+        "Charles Rabemananjara",
+        "Presidential Family (Libya)"
+      ]
+    },
+    {
+      "qid": "3000168",
+      "is_correct": false,
+      "final_answer": "Mexico",
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Angela Merkel"
+      ]
+    },
+    {
+      "qid": "3000169",
+      "is_correct": true,
+      "final_answer": "China",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Japan",
+        "Kuwait",
+        "Head of Government (Turkmenistan)",
+        "Gurbanguly Berdymukhammedov",
+        "Ethiopia",
+        "Ismaïl Omar Guelleh",
+        "Islam Karimov",
+        "United Arab Emirates",
+        "Middle East",
+        "China",
+        "Qatar",
+        "Iraq"
+      ]
+    },
+    {
+      "qid": "3000170",
+      "is_correct": false,
+      "final_answer": "2005-02",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-06"
+      ]
+    },
+    {
+      "qid": "3000171",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Citizen (Thailand)",
+        "Iran",
+        "Newspaper (United Kingdom)",
+        "Abdullah Gül",
+        "Tony Blair",
+        "UN Security Council",
+        "China",
+        "Mahmoud Ahmadinejad",
+        "Jack Straw",
+        "Legislature (Iraq)",
+        "Malaysia"
+      ]
+    },
+    {
+      "qid": "3000172",
+      "is_correct": false,
+      "final_answer": "2005-03-28",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2005-05-03"
+      ]
+    },
+    {
+      "qid": "3000173",
+      "is_correct": false,
+      "final_answer": "Iran",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Mexico"
+      ]
+    },
+    {
+      "qid": "3000174",
+      "is_correct": false,
+      "final_answer": "Tony_Blair",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Mahmoud Abbas"
+      ]
+    },
+    {
+      "qid": "3000175",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Iran"
+      ]
+    },
+    {
+      "qid": "3000176",
+      "is_correct": false,
+      "final_answer": "South_Korea",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Vietnam"
+      ]
+    },
+    {
+      "qid": "3000177",
+      "is_correct": false,
+      "final_answer": "Ma_Ying_Jeou",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Fishermen (Vietnam)",
+        "Blogger (China)",
+        "Dissident (China)",
+        "Criminal (China)",
+        "Vietnam"
+      ]
+    },
+    {
+      "qid": "3000178",
+      "is_correct": false,
+      "final_answer": "2005-01-02",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 36,
+      "path_hit@80": false,
+      "golds": [
+        "2010-06-09"
+      ]
+    },
+    {
+      "qid": "3000179",
+      "is_correct": false,
+      "final_answer": "Police_(Israel)",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Settler (Israel)"
+      ]
+    },
+    {
+      "qid": "3000180",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 48,
+      "path_hit@80": true,
+      "golds": [
+        "Rebel Group (Iraqi Kurds)",
+        "Party Member (Iraq)",
+        "Legislature (Iraq)",
+        "Employee (Iraq)",
+        "Kuwait",
+        "Barack Obama",
+        "Iran",
+        "Police (Turkmenistan)"
+      ]
+    },
+    {
+      "qid": "3000181",
+      "is_correct": false,
+      "final_answer": "Iran",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Mahmoud Ahmadinejad"
+      ]
+    },
+    {
+      "qid": "3000182",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Naval (United States)"
+      ]
+    },
+    {
+      "qid": "3000183",
+      "is_correct": false,
+      "final_answer": "2005",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2011"
+      ]
+    },
+    {
+      "qid": "3000184",
+      "is_correct": true,
+      "final_answer": "Eritrea",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Eritrea"
+      ]
+    },
+    {
+      "qid": "3000185",
+      "is_correct": true,
+      "final_answer": "Iran",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Barack Obama",
+        "Iran",
+        "Asylum Seeker (Iraq)",
+        "China",
+        "Adil Abdul-Mahdi",
+        "Party Member (United Kingdom)",
+        "Haider Al-Abadi",
+        "Massoud Barzani",
+        "Eshaq Jahangiri"
+      ]
+    },
+    {
+      "qid": "3000186",
+      "is_correct": false,
+      "final_answer": "China",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Cambodia",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000187",
+      "is_correct": false,
+      "final_answer": "Indigenous_People_(Taiwan)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Thailand",
+        "Military (Cambodia)"
+      ]
+    },
+    {
+      "qid": "3000188",
+      "is_correct": true,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Citizen (Thailand)",
+        "Insurgent (Thailand)",
+        "Member of Parliament (Thailand)",
+        "Armed Opposition (Thailand)",
+        "Armed Gang (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000189",
+      "is_correct": false,
+      "final_answer": "2005-01-18",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2009-05-15"
+      ]
+    },
+    {
+      "qid": "3000190",
+      "is_correct": true,
+      "final_answer": "China",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 64,
+      "path_hit@80": true,
+      "golds": [
+        "National United Front for Democracy Against Dictatorship",
+        "Mahmoud Ahmadinejad",
+        "Moana Carcasses Kalosil",
+        "Cambodia",
+        "China"
+      ]
+    },
+    {
+      "qid": "3000191",
+      "is_correct": false,
+      "final_answer": "Police_(Malaysia)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Citizen (Thailand)",
+        "Thailand",
+        "Xi Jinping",
+        "Citizen (Singapore)",
+        "China"
+      ]
+    },
+    {
+      "qid": "3000192",
+      "is_correct": false,
+      "final_answer": "Sudan",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "East African Community",
+        "Angela Merkel",
+        "Muhammadu Buhari",
+        "Loren Legarda",
+        "Qatar",
+        "Jens Stoltenberg"
+      ]
+    },
+    {
+      "qid": "3000193",
+      "is_correct": false,
+      "final_answer": "Men_(Cambodia)",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Malaysia",
+        "Association of Southeast Asian Nations",
+        "Head of Government (Sri Lanka)",
+        "Vietnam",
+        "Takahiro Yokomichi",
+        "Thongsing Thammavong",
+        "Wen Jiabao",
+        "George Yeo",
+        "Thailand",
+        "Laos",
+        "China",
+        "Japan",
+        "Roh Moo Hyun"
+      ]
+    },
+    {
+      "qid": "3000194",
+      "is_correct": false,
+      "final_answer": "Catherine_Ashton",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Tony Tan Keng Yam",
+        "Mahmoud Abbas",
+        "Philip Hammond",
+        "Sudan",
+        "Sheikh Hamad bin Isa al Khalifah",
+        "Media Personnel (Africa)"
+      ]
+    },
+    {
+      "qid": "3000195",
+      "is_correct": false,
+      "final_answer": "Japan",
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Kazakhstan"
+      ]
+    },
+    {
+      "qid": "3000196",
+      "is_correct": false,
+      "final_answer": "2005-01-05",
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "n_paths": 68,
+      "path_hit@80": false,
+      "golds": [
+        "2007-10-27"
+      ]
+    },
+    {
+      "qid": "3000197",
+      "is_correct": true,
+      "final_answer": "Citizen_(Thailand)",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Party Member (Thailand)",
+        "Protester (Thailand)",
+        "Citizen (Thailand)",
+        "Association of Southeast Asian Nations",
+        "High Commission for Refugees",
+        "Malaysia",
+        "Employee (Thailand)",
+        "Supachai Panitchpakdi",
+        "Cambodia",
+        "Chaiwat Sinsuwong",
+        "Royal Thai Police"
+      ]
+    },
+    {
+      "qid": "3000198",
+      "is_correct": false,
+      "final_answer": "Human_Rights_Watch",
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "South Korea",
+        "France",
+        "China",
+        "Laos",
+        "Vietnam",
+        "Japan",
+        "Thailand"
+      ]
+    },
+    {
+      "qid": "3000199",
+      "is_correct": false,
+      "final_answer": "2006",
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2011"
+      ]
+    }
+  ]
+}

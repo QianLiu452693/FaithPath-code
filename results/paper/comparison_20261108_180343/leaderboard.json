@@ -1,0 +1,952 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "n_questions": 500,
+  "dataset": "MultiTQ",
+  "leaderboard": [
+    {
+      "variant": "FULL",
+      "desc": "BiBFS+EGOR+TFC",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 322.2205548286438,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "BiBFS+EGOR+TFC",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true
+      }
+    },
+    {
+      "variant": "B2",
+      "desc": "EmbedMHOP (no temporal)",
+      "n": 500,
+      "correct": 131,
+      "overall_hits@1": 26.2,
+      "path_hit@80": 57.2,
+      "avg_paths": 73.724,
+      "wall_sec": 12.746768474578857,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 20,
+          "hits@1": 14.814814814814815
+        },
+        "Single": {
+          "total": 365,
+          "correct": 111,
+          "hits@1": 30.410958904109588
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 6,
+          "hits@1": 12.244897959183673
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 19,
+          "hits@1": 17.59259259259259
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 8,
+          "hits@1": 12.698412698412698
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 41,
+          "hits@1": 40.19607843137255
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 51,
+          "hits@1": 32.903225806451616
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 102,
+          "hits@1": 29.565217391304348
+        },
+        "time": {
+          "total": 155,
+          "correct": 29,
+          "hits@1": 18.70967741935484
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 60,
+          "hits@1": 19.672131147540984
+        },
+        "year": {
+          "total": 94,
+          "correct": 33,
+          "hits@1": 35.1063829787234
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "EmbedMHOP (no temporal)",
+        "bibfs": true,
+        "egor": false,
+        "tfc": false,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 2,
+        "embed": true,
+        "temporal_first": false
+      }
+    },
+    {
+      "variant": "F_notf",
+      "desc": "FULL no temporal-first beam (prox on)",
+      "n": 500,
+      "correct": 125,
+      "overall_hits@1": 25.0,
+      "path_hit@80": 58.8,
+      "avg_paths": 73.492,
+      "wall_sec": 3.7141597270965576,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 13,
+          "hits@1": 9.62962962962963
+        },
+        "Single": {
+          "total": 365,
+          "correct": 112,
+          "hits@1": 30.684931506849313
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 4,
+          "hits@1": 8.16326530612245
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 43,
+          "hits@1": 42.15686274509804
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 51,
+          "hits@1": 32.903225806451616
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 97,
+          "hits@1": 28.115942028985508
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 32,
+          "hits@1": 34.04255319148936
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "FULL no temporal-first beam (prox on)",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": false,
+        "lambda_prox": 0.4
+      }
+    },
+    {
+      "variant": "F_noprox",
+      "desc": "FULL no proximity (temporal-first on)",
+      "n": 500,
+      "correct": 128,
+      "overall_hits@1": 25.6,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 219.63709354400635,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 13,
+          "hits@1": 9.62962962962963
+        },
+        "Single": {
+          "total": 365,
+          "correct": 115,
+          "hits@1": 31.506849315068493
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 4,
+          "hits@1": 8.16326530612245
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 46,
+          "hits@1": 45.09803921568628
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 51,
+          "hits@1": 32.903225806451616
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 100,
+          "hits@1": 28.985507246376812
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 33,
+          "hits@1": 35.1063829787234
+        },
+        "month": {
+          "total": 101,
+          "correct": 40,
+          "hits@1": 39.603960396039604
+        }
+      },
+      "spec": {
+        "desc": "FULL no proximity (temporal-first on)",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true,
+        "lambda_prox": 0.0
+      }
+    },
+    {
+      "variant": "F_noprune",
+      "desc": "FULL no temporal-first + no prox (=B2-like scoring on FULL stack)",
+      "n": 500,
+      "correct": 125,
+      "overall_hits@1": 25.0,
+      "path_hit@80": 58.8,
+      "avg_paths": 73.492,
+      "wall_sec": 3.700636863708496,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 13,
+          "hits@1": 9.62962962962963
+        },
+        "Single": {
+          "total": 365,
+          "correct": 112,
+          "hits@1": 30.684931506849313
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 4,
+          "hits@1": 8.16326530612245
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 43,
+          "hits@1": 42.15686274509804
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 51,
+          "hits@1": 32.903225806451616
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 97,
+          "hits@1": 28.115942028985508
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 32,
+          "hits@1": 34.04255319148936
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "FULL no temporal-first + no prox (=B2-like scoring on FULL stack)",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": false,
+        "lambda_prox": 0.0
+      }
+    },
+    {
+      "variant": "F_nomem",
+      "desc": "FULL EGOR without memory vote",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "avg_paths": 72.1,
+      "wall_sec": 218.36116409301758,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "FULL EGOR without memory vote",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true,
+        "egor_no_memory": true
+      }
+    },
+    {
+      "variant": "SN10",
+      "desc": "FULL seed-noise eta=0.1",
+      "n": 500,
+      "correct": 103,
+      "overall_hits@1": 20.6,
+      "path_hit@80": 59.4,
+      "avg_paths": 75.75,
+      "wall_sec": 214.3214976787567,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 9,
+          "hits@1": 6.666666666666667
+        },
+        "Single": {
+          "total": 365,
+          "correct": 94,
+          "hits@1": 25.753424657534246
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 6,
+          "hits@1": 12.244897959183673
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 16,
+          "hits@1": 14.814814814814815
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 0,
+          "hits@1": 0.0
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 38,
+          "hits@1": 37.254901960784316
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 3,
+          "hits@1": 13.043478260869565
+        },
+        "equal": {
+          "total": 155,
+          "correct": 40,
+          "hits@1": 25.806451612903224
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 82,
+          "hits@1": 23.768115942028984
+        },
+        "time": {
+          "total": 155,
+          "correct": 21,
+          "hits@1": 13.548387096774194
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 44,
+          "hits@1": 14.426229508196721
+        },
+        "year": {
+          "total": 94,
+          "correct": 27,
+          "hits@1": 28.72340425531915
+        },
+        "month": {
+          "total": 101,
+          "correct": 32,
+          "hits@1": 31.683168316831683
+        }
+      },
+      "spec": {
+        "desc": "FULL seed-noise eta=0.1",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true,
+        "seed_noise_eta": 0.1
+      }
+    },
+    {
+      "variant": "SN20",
+      "desc": "FULL seed-noise eta=0.2",
+      "n": 500,
+      "correct": 106,
+      "overall_hits@1": 21.2,
+      "path_hit@80": 59.6,
+      "avg_paths": 76.292,
+      "wall_sec": 223.3479061126709,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 12,
+          "hits@1": 8.88888888888889
+        },
+        "Single": {
+          "total": 365,
+          "correct": 94,
+          "hits@1": 25.753424657534246
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 6,
+          "hits@1": 12.244897959183673
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 14,
+          "hits@1": 12.962962962962964
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 1,
+          "hits@1": 1.5873015873015872
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 38,
+          "hits@1": 37.254901960784316
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 5,
+          "hits@1": 21.73913043478261
+        },
+        "equal": {
+          "total": 155,
+          "correct": 42,
+          "hits@1": 27.096774193548388
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 83,
+          "hits@1": 24.057971014492754
+        },
+        "time": {
+          "total": 155,
+          "correct": 23,
+          "hits@1": 14.838709677419354
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 48,
+          "hits@1": 15.737704918032787
+        },
+        "year": {
+          "total": 94,
+          "correct": 27,
+          "hits@1": 28.72340425531915
+        },
+        "month": {
+          "total": 101,
+          "correct": 31,
+          "hits@1": 30.693069306930692
+        }
+      },
+      "spec": {
+        "desc": "FULL seed-noise eta=0.2",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true,
+        "seed_noise_eta": 0.2
+      }
+    },
+    {
+      "variant": "SN30",
+      "desc": "FULL seed-noise eta=0.3",
+      "n": 500,
+      "correct": 99,
+      "overall_hits@1": 19.8,
+      "path_hit@80": 58.8,
+      "avg_paths": 75.572,
+      "wall_sec": 215.77120065689087,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 10,
+          "hits@1": 7.407407407407407
+        },
+        "Single": {
+          "total": 365,
+          "correct": 89,
+          "hits@1": 24.383561643835616
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 6,
+          "hits@1": 12.244897959183673
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 16,
+          "hits@1": 14.814814814814815
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 0,
+          "hits@1": 0.0
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 38,
+          "hits@1": 37.254901960784316
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 4,
+          "hits@1": 17.391304347826086
+        },
+        "equal": {
+          "total": 155,
+          "correct": 35,
+          "hits@1": 22.580645161290324
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 78,
+          "hits@1": 22.608695652173914
+        },
+        "time": {
+          "total": 155,
+          "correct": 21,
+          "hits@1": 13.548387096774194
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 37,
+          "hits@1": 12.131147540983607
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 31,
+          "hits@1": 30.693069306930692
+        }
+      },
+      "spec": {
+        "desc": "FULL seed-noise eta=0.3",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true,
+        "seed_noise_eta": 0.3
+      }
+    }
+  ],
+  "paired_bootstrap_hits@1": {
+    "B2": {
+      "vs_FULL": {
+        "delta": 1.4000000000000012,
+        "ci_low": -1.1999999999999984,
+        "ci_high": 3.8000000000000034,
+        "includes_0": true,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "F_notf": {
+      "vs_FULL": {
+        "delta": 0.20000000000000018,
+        "ci_low": -1.8000000000000016,
+        "ci_high": 2.399999999999997,
+        "includes_0": true,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "F_noprox": {
+      "vs_FULL": {
+        "delta": 0.8000000000000007,
+        "ci_low": -0.20000000000000018,
+        "ci_high": 1.8000000000000016,
+        "includes_0": true,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "F_noprune": {
+      "vs_FULL": {
+        "delta": 0.20000000000000018,
+        "ci_low": -1.8000000000000016,
+        "ci_high": 2.399999999999997,
+        "includes_0": true,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "F_nomem": {
+      "vs_FULL": {
+        "delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "includes_0": true,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "SN10": {
+      "vs_FULL": {
+        "delta": -4.200000000000001,
+        "ci_low": -7.399999999999999,
+        "ci_high": -1.200000000000001,
+        "includes_0": false,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "SN20": {
+      "vs_FULL": {
+        "delta": -3.6000000000000005,
+        "ci_low": -6.800000000000001,
+        "ci_high": -0.6000000000000005,
+        "includes_0": false,
+        "n": 500,
+        "n_boot": 2000
+      }
+    },
+    "SN30": {
+      "vs_FULL": {
+        "delta": -4.999999999999999,
+        "ci_low": -8.000000000000002,
+        "ci_high": -2.0000000000000018,
+        "includes_0": false,
+        "n": 500,
+        "n_boot": 2000
+      }
+    }
+  },
+  "innovations": [
+    "Inv1 Monotone BiBFS + Adaptive D_pred + temporal beam + Score(p)",
+    "Inv2 Experience-Guided Operator Routing (EGOR)",
+    "Inv3 Temporal Faithfulness Critic (TFC)"
+  ],
+  "baselines": [
+    "B0 CandidatePrior",
+    "B1 OneHopLexical",
+    "B2 EmbedMHOP (embedding multi-hop, no temporal-first/proximity)"
+  ]
+}

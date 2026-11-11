@@ -1,0 +1,9 @@
+{
+  "n": 200,
+  "llm_model": "qwen2.5:3b",
+  "wall_sec": 623.8155269622803,
+  "operator_agreement_pct": 25.0,
+  "n_match": 50,
+  "n_fail": 0,
+  "note": "Forced LLM-Select (_egor_route disabled); agreement = LLM primary op vs gold EGOR operator set."
+}

@@ -1,0 +1,8 @@
+{
+  "sample_n": 180,
+  "population_selection_gaps_full": 19957,
+  "pipeline_hits@1_on_gap_sample": 0.0,
+  "oracle_gold_path_hits@1_on_gap_sample": 54.44444444444444,
+  "pct_ranking_fixable_in_sample": 54.44444444444444,
+  "seed": 0
+}

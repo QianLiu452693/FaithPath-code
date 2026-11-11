@@ -1,0 +1,43 @@
+{
+  "n": 500,
+  "baseline_error_pct": 75.2,
+  "gates": {
+    "always_answer": {
+      "coverage": 100.0,
+      "risk": 75.2,
+      "hits@1_on_answered": 24.8,
+      "n_answered": 500
+    },
+    "pathhit_evidence_gate": {
+      "coverage": 58.4,
+      "risk": 57.53424657534247,
+      "hits@1_on_answered": 42.465753424657535,
+      "n_answered": 292
+    },
+    "tfc_score_ge_0.93": {
+      "coverage": 61.8,
+      "risk": 72.81553398058253,
+      "hits@1_on_answered": 27.184466019417474,
+      "n_answered": 309
+    },
+    "combined_pathhit_and_tfc093": {
+      "coverage": 37.8,
+      "risk": 55.55555555555556,
+      "hits@1_on_answered": 44.44444444444444,
+      "n_answered": 189
+    }
+  },
+  "tfc_score_high_band_ge_0.935": {
+    "coverage": 14.0,
+    "risk": 51.42857142857142,
+    "hits@1_on_answered": 48.57142857142857,
+    "n_answered": 70
+  },
+  "tfc_score_low_band_lt_0.92": {
+    "coverage": 16.2,
+    "risk": 62.96296296296296,
+    "hits@1_on_answered": 37.03703703703704,
+    "n_answered": 81
+  },
+  "note": "Default Faithful bit is permissive on this prefix (all True); report score- and PathHit-gated operating points for KBS reliability narrative."
+}

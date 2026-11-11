@@ -1,0 +1,143 @@
+{
+  "n": 500,
+  "variant": "FULL",
+  "source": "E:\\cursor-code\\TKG1\\MemoTime-main\\MemoTime-main\\results\\paper\\comparison_20261108_195018\\FULL.json",
+  "series": [
+    {
+      "k_ref": 1,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 306,
+        "selection_gap": 70
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 61.2,
+        "selection_gap": 14.0
+      },
+      "pct_of_errors": {
+        "evidence_miss": 81.38297872340425,
+        "selection_gap": 18.617021276595743
+      }
+    },
+    {
+      "k_ref": 5,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 278,
+        "selection_gap": 98
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 55.6,
+        "selection_gap": 19.6
+      },
+      "pct_of_errors": {
+        "evidence_miss": 73.93617021276596,
+        "selection_gap": 26.06382978723404
+      }
+    },
+    {
+      "k_ref": 10,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 255,
+        "selection_gap": 121
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 51.0,
+        "selection_gap": 24.2
+      },
+      "pct_of_errors": {
+        "evidence_miss": 67.81914893617021,
+        "selection_gap": 32.180851063829785
+      }
+    },
+    {
+      "k_ref": 20,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 245,
+        "selection_gap": 131
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 49.0,
+        "selection_gap": 26.2
+      },
+      "pct_of_errors": {
+        "evidence_miss": 65.15957446808511,
+        "selection_gap": 34.840425531914896
+      }
+    },
+    {
+      "k_ref": 40,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 230,
+        "selection_gap": 146
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 46.0,
+        "selection_gap": 29.2
+      },
+      "pct_of_errors": {
+        "evidence_miss": 61.170212765957444,
+        "selection_gap": 38.829787234042556
+      }
+    },
+    {
+      "k_ref": 80,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 208,
+        "selection_gap": 168
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 41.6,
+        "selection_gap": 33.6
+      },
+      "pct_of_errors": {
+        "evidence_miss": 55.319148936170215,
+        "selection_gap": 44.680851063829785
+      }
+    },
+    {
+      "k_ref": 120,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 208,
+        "selection_gap": 168
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 41.6,
+        "selection_gap": 33.6
+      },
+      "pct_of_errors": {
+        "evidence_miss": 55.319148936170215,
+        "selection_gap": 44.680851063829785
+      }
+    },
+    {
+      "k_ref": 160,
+      "counts": {
+        "correct": 124,
+        "evidence_miss": 208,
+        "selection_gap": 168
+      },
+      "pct_of_all": {
+        "correct": 24.8,
+        "evidence_miss": 41.6,
+        "selection_gap": 33.6
+      },
+      "pct_of_errors": {
+        "evidence_miss": 55.319148936170215,
+        "selection_gap": 44.680851063829785
+      }
+    }
+  ]
+}

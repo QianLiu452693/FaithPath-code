@@ -1,0 +1,31 @@
+{
+  "n": 200,
+  "llm_model": "qwen2.5:3b",
+  "top_paths": 5,
+  "tfc_threshold": 0.93,
+  "wall_sec": 263.8124957084656,
+  "hits@1_all_n": {
+    "path_tail": 26.0,
+    "llm_always_topk": 22.0,
+    "llm_with_pathhit_gate": 22.0,
+    "llm_with_combined_gate": 12.0
+  },
+  "coverage": {
+    "pathhit_gate": 61.5,
+    "combined_gate": 40.0
+  },
+  "hits@1_on_answered_only": {
+    "llm_pathhit_gate": 35.77235772357724,
+    "llm_combined_gate": 30.0
+  },
+  "paired_delta_pp": {
+    "llm_always_minus_path_tail": {
+      "delta": -4.000000000000001,
+      "ci_low": -9.500000000000004,
+      "ci_high": 1.9999999999999962,
+      "includes_0": true,
+      "n": 200,
+      "n_boot": 2000
+    }
+  }
+}

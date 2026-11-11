@@ -1,0 +1,1073 @@
+{
+  "stamp": "20261107_225601",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "protocol": "retrieval-only FaithPath scale-up + EmbedMHOP B2 + paired bootstrap",
+  "note": "No cloud API key detected for FaithPath+LLM closed-loop; EXAQT not reimplemented (mark as unmatched strong baseline).",
+  "sections": {
+    "MultiTQ": {
+      "dataset": "MultiTQ",
+      "n": 5000,
+      "rc": 0,
+      "source": "E:\\cursor-code\\TKG1\\MemoTime-main\\MemoTime-main\\results\\paper\\comparison_20261107_225916",
+      "leaderboard": [
+        {
+          "variant": "B0",
+          "desc": "CandidatePrior top1",
+          "n": 5000,
+          "correct": 545,
+          "overall_hits@1": 10.9,
+          "path_hit@80": 0.0,
+          "avg_paths": 0.0,
+          "wall_sec": 0.013428688049316406,
+          "by_qlabel": {
+            "Multiple": {
+              "total": 1423,
+              "correct": 103,
+              "hits@1": 7.238229093464511
+            },
+            "Single": {
+              "total": 3577,
+              "correct": 442,
+              "hits@1": 12.356723511322338
+            }
+          },
+          "by_qtype": {
+            "after_first": {
+              "total": 581,
+              "correct": 40,
+              "hits@1": 6.884681583476764
+            },
+            "first_last": {
+              "total": 951,
+              "correct": 6,
+              "hits@1": 0.6309148264984227
+            },
+            "before_last": {
+              "total": 562,
+              "correct": 29,
+              "hits@1": 5.160142348754448
+            },
+            "before_after": {
+              "total": 1009,
+              "correct": 284,
+              "hits@1": 28.146679881070366
+            },
+            "equal_multi": {
+              "total": 280,
+              "correct": 34,
+              "hits@1": 12.142857142857142
+            },
+            "equal": {
+              "total": 1617,
+              "correct": 152,
+              "hits@1": 9.400123685837972
+            }
+          },
+          "by_answer_type": {
+            "entity": {
+              "total": 3560,
+              "correct": 545,
+              "hits@1": 15.308988764044944
+            },
+            "time": {
+              "total": 1440,
+              "correct": 0,
+              "hits@1": 0.0
+            }
+          },
+          "by_time_level": {
+            "day": {
+              "total": 3085,
+              "correct": 305,
+              "hits@1": 9.886547811993516
+            },
+            "year": {
+              "total": 827,
+              "correct": 115,
+              "hits@1": 13.905683192261185
+            },
+            "month": {
+              "total": 1088,
+              "correct": 125,
+              "hits@1": 11.488970588235293
+            }
+          },
+          "spec": {
+            "desc": "CandidatePrior top1",
+            "bibfs": false,
+            "egor": false,
+            "tfc": false,
+            "onehop": false,
+            "d_max": 1,
+            "embed": false,
+            "temporal_first": true
+          }
+        },
+        {
+          "variant": "B1",
+          "desc": "OneHopLexical",
+          "n": 5000,
+          "correct": 992,
+          "overall_hits@1": 19.84,
+          "path_hit@80": 70.62,
+          "avg_paths": 79.9446,
+          "wall_sec": 9.00888705253601,
+          "by_qlabel": {
+            "Multiple": {
+              "total": 1423,
+              "correct": 187,
+              "hits@1": 13.141250878425861
+            },
+            "Single": {
+              "total": 3577,
+              "correct": 805,
+              "hits@1": 22.504892367906066
+            }
+          },
+          "by_qtype": {
+            "after_first": {
+              "total": 581,
+              "correct": 61,
+              "hits@1": 10.499139414802066
+            },
+            "first_last": {
+              "total": 951,
+              "correct": 76,
+              "hits@1": 7.991587802313354
+            },
+            "before_last": {
+              "total": 562,
+              "correct": 64,
+              "hits@1": 11.387900355871887
+            },
+            "before_after": {
+              "total": 1009,
+              "correct": 437,
+              "hits@1": 43.31020812685828
+            },
+            "equal_multi": {
+              "total": 280,
+              "correct": 62,
+              "hits@1": 22.142857142857142
+            },
+            "equal": {
+              "total": 1617,
+              "correct": 292,
+              "hits@1": 18.05813234384663
+            }
+          },
+          "by_answer_type": {
+            "entity": {
+              "total": 3560,
+              "correct": 882,
+              "hits@1": 24.775280898876403
+            },
+            "time": {
+              "total": 1440,
+              "correct": 110,
+              "hits@1": 7.638888888888889
+            }
+          },
+          "by_time_level": {
+            "day": {
+              "total": 3085,
+              "correct": 515,
+              "hits@1": 16.693679092382496
+            },
+            "year": {
+              "total": 827,
+              "correct": 216,
+              "hits@1": 26.11850060459492
+            },
+            "month": {
+              "total": 1088,
+              "correct": 261,
+              "hits@1": 23.988970588235293
+            }
+          },
+          "spec": {
+            "desc": "OneHopLexical",
+            "bibfs": false,
+            "egor": false,
+            "tfc": false,
+            "onehop": true,
+            "d_max": 1,
+            "embed": false,
+            "temporal_first": true
+          }
+        },
+        {
+          "variant": "B2",
+          "desc": "EmbedMHOP (no temporal)",
+          "n": 5000,
+          "correct": 1233,
+          "overall_hits@1": 24.66,
+          "path_hit@80": 59.98,
+          "avg_paths": 73.1488,
+          "wall_sec": 282.2872130870819,
+          "by_qlabel": {
+            "Multiple": {
+              "total": 1423,
+              "correct": 179,
+              "hits@1": 12.579058327477162
+            },
+            "Single": {
+              "total": 3577,
+              "correct": 1054,
+              "hits@1": 29.46603298853788
+            }
+          },
+          "by_qtype": {
+            "after_first": {
+              "total": 581,
+              "correct": 56,
+              "hits@1": 9.63855421686747
+            },
+            "first_last": {
+              "total": 951,
+              "correct": 209,
+              "hits@1": 21.976866456361723
+            },
+            "before_last": {
+              "total": 562,
+              "correct": 64,
+              "hits@1": 11.387900355871887
+            },
+            "before_after": {
+              "total": 1009,
+              "correct": 345,
+              "hits@1": 34.19226957383548
+            },
+            "equal_multi": {
+              "total": 280,
+              "correct": 59,
+              "hits@1": 21.071428571428573
+            },
+            "equal": {
+              "total": 1617,
+              "correct": 500,
+              "hits@1": 30.921459492888065
+            }
+          },
+          "by_answer_type": {
+            "entity": {
+              "total": 3560,
+              "correct": 897,
+              "hits@1": 25.196629213483146
+            },
+            "time": {
+              "total": 1440,
+              "correct": 336,
+              "hits@1": 23.333333333333332
+            }
+          },
+          "by_time_level": {
+            "day": {
+              "total": 3085,
+              "correct": 576,
+              "hits@1": 18.670988654781198
+            },
+            "year": {
+              "total": 827,
+              "correct": 296,
+              "hits@1": 35.79201934703749
+            },
+            "month": {
+              "total": 1088,
+              "correct": 361,
+              "hits@1": 33.18014705882353
+            }
+          },
+          "spec": {
+            "desc": "EmbedMHOP (no temporal)",
+            "bibfs": true,
+            "egor": false,
+            "tfc": false,
+            "onehop": false,
+            "d_max": 2,
+            "embed": true,
+            "temporal_first": false
+          }
+        },
+        {
+          "variant": "A1",
+          "desc": "BiBFS only (Inv1)",
+          "n": 5000,
+          "correct": 1142,
+          "overall_hits@1": 22.84,
+          "path_hit@80": 59.66,
+          "avg_paths": 73.1488,
+          "wall_sec": 71.63026547431946,
+          "by_qlabel": {
+            "Multiple": {
+              "total": 1423,
+              "correct": 181,
+              "hits@1": 12.719606465214335
+            },
+            "Single": {
+              "total": 3577,
+              "correct": 961,
+              "hits@1": 26.86608890131395
+            }
+          },
+          "by_qtype": {
+            "after_first": {
+              "total": 581,
+              "correct": 58,
+              "hits@1": 9.982788296041308
+            },
+            "first_last": {
+              "total": 951,
+              "correct": 209,
+              "hits@1": 21.976866456361723
+            },
+            "before_last": {
+              "total": 562,
+              "correct": 64,
+              "hits@1": 11.387900355871887
+            },
+            "before_after": {
+              "total": 1009,
+              "correct": 265,
+              "hits@1": 26.26362735381566
+            },
+            "equal_multi": {
+              "total": 280,
+              "correct": 59,
+              "hits@1": 21.071428571428573
+            },
+            "equal": {
+              "total": 1617,
+              "correct": 487,
+              "hits@1": 30.117501546072976
+            }
+          },
+          "by_answer_type": {
+            "entity": {
+              "total": 3560,
+              "correct": 806,
+              "hits@1": 22.640449438202246
+            },
+            "time": {
+              "total": 1440,
+              "correct": 336,
+              "hits@1": 23.333333333333332
+            }
+          },
+          "by_time_level": {
+            "day": {
+              "total": 3085,
+              "correct": 532,
+              "hits@1": 17.244732576985413
+            },
+            "year": {
+              "total": 827,
+              "correct": 281,
+              "hits@1": 33.9782345828295
+            },
+            "month": {
+              "total": 1088,
+              "correct": 329,
+              "hits@1": 30.238970588235293
+            }
+          },
+          "spec": {
+            "desc": "BiBFS only (Inv1)",
+            "bibfs": true,
+            "egor": false,
+            "tfc": false,
+            "onehop": false,
+            "d_max": 3,
+            "embed": true,
+            "temporal_first": true
+          }
+        },
+        {
+          "variant": "FULL",
+          "desc": "BiBFS+EGOR+TFC",
+          "n": 5000,
+          "correct": 1186,
+          "overall_hits@1": 23.72,
+          "path_hit@80": 60.48,
+          "avg_paths": 71.8552,
+          "wall_sec": 2480.3439610004425,
+          "by_qlabel": {
+            "Multiple": {
+              "total": 1423,
+              "correct": 124,
+              "hits@1": 8.71398453970485
+            },
+            "Single": {
+              "total": 3577,
+              "correct": 1062,
+              "hits@1": 29.68968409281521
+            }
+          },
+          "by_qtype": {
+            "after_first": {
+              "total": 581,
+              "correct": 45,
+              "hits@1": 7.74526678141136
+            },
+            "first_last": {
+              "total": 951,
+              "correct": 213,
+              "hits@1": 22.397476340694006
+            },
+            "before_last": {
+              "total": 562,
+              "correct": 20,
+              "hits@1": 3.5587188612099645
+            },
+            "before_after": {
+              "total": 1009,
+              "correct": 363,
+              "hits@1": 35.97621407333994
+            },
+            "equal_multi": {
+              "total": 280,
+              "correct": 59,
+              "hits@1": 21.071428571428573
+            },
+            "equal": {
+              "total": 1617,
+              "correct": 486,
+              "hits@1": 30.055658627087197
+            }
+          },
+          "by_answer_type": {
+            "entity": {
+              "total": 3560,
+              "correct": 849,
+              "hits@1": 23.848314606741575
+            },
+            "time": {
+              "total": 1440,
+              "correct": 337,
+              "hits@1": 23.40277777777778
+            }
+          },
+          "by_time_level": {
+            "day": {
+              "total": 3085,
+              "correct": 537,
+              "hits@1": 17.406807131280388
+            },
+            "year": {
+              "total": 827,
+              "correct": 299,
+              "hits@1": 36.15477629987908
+            },
+            "month": {
+              "total": 1088,
+              "correct": 350,
+              "hits@1": 32.169117647058826
+            }
+          },
+          "spec": {
+            "desc": "BiBFS+EGOR+TFC",
+            "bibfs": true,
+            "egor": true,
+            "tfc": true,
+            "onehop": false,
+            "d_max": 3,
+            "embed": true,
+            "temporal_first": true
+          }
+        }
+      ],
+      "paired_bootstrap_hits@1": {
+        "B0": {
+          "vs_B0": {
+            "delta": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "includes_0": true,
+            "n": 5000,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": -12.819999999999999,
+            "ci_low": -14.24,
+            "ci_high": -11.339500000000003,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          }
+        },
+        "B1": {
+          "vs_B0": {
+            "delta": 8.94,
+            "ci_low": 7.7200000000000015,
+            "ci_high": 10.16,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": -3.88,
+            "ci_low": -5.140500000000003,
+            "ci_high": -2.6599999999999984,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          }
+        },
+        "B2": {
+          "vs_B0": {
+            "delta": 13.76,
+            "ci_low": 12.28,
+            "ci_high": 15.120000000000001,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": 0.940000000000002,
+            "ci_low": 0.23999999999999855,
+            "ci_high": 1.6199999999999992,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          }
+        },
+        "A1": {
+          "vs_B0": {
+            "delta": 11.94,
+            "ci_low": 10.52,
+            "ci_high": 13.319999999999999,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": -0.8800000000000002,
+            "ci_low": -1.5600000000000003,
+            "ci_high": -0.22000000000000075,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          }
+        },
+        "FULL": {
+          "vs_B0": {
+            "delta": 12.819999999999999,
+            "ci_low": 11.3395,
+            "ci_high": 14.24,
+            "includes_0": false,
+            "n": 5000,
+            "n_boot": 2000
+          }
+        }
+      }
+    },
+    "TimeQuestions": {
+      "dataset": "TimeQuestions",
+      "n": 3237,
+      "rc": 0,
+      "source": "E:\\cursor-code\\TKG1\\MemoTime-main\\MemoTime-main\\results\\paper\\comparison_20261107_234703",
+      "leaderboard": [
+        {
+          "variant": "B0",
+          "desc": "CandidatePrior top1",
+          "n": 3237,
+          "correct": 152,
+          "overall_hits@1": 4.695705900525177,
+          "path_hit@80": 0.0,
+          "avg_paths": 0.0,
+          "wall_sec": 0.006974697113037109,
+          "by_qlabel": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 37,
+              "hits@1": 3.4774436090225564
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 51,
+              "hits@1": 3.8871951219512195
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 46,
+              "hits@1": 8.084358523725834
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 18,
+              "hits@1": 6.164383561643835
+            }
+          },
+          "by_qtype": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 37,
+              "hits@1": 3.4774436090225564
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 51,
+              "hits@1": 3.8871951219512195
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 46,
+              "hits@1": 8.084358523725834
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 18,
+              "hits@1": 6.164383561643835
+            }
+          },
+          "by_answer_type": {
+            "time": {
+              "total": 1210,
+              "correct": 7,
+              "hits@1": 0.5785123966942148
+            },
+            "entity": {
+              "total": 2027,
+              "correct": 145,
+              "hits@1": 7.153428712382832
+            }
+          },
+          "by_time_level": {
+            "year": {
+              "total": 3237,
+              "correct": 152,
+              "hits@1": 4.695705900525177
+            }
+          },
+          "spec": {
+            "desc": "CandidatePrior top1",
+            "bibfs": false,
+            "egor": false,
+            "tfc": false,
+            "onehop": false,
+            "d_max": 1,
+            "embed": false,
+            "temporal_first": true
+          }
+        },
+        {
+          "variant": "B1",
+          "desc": "OneHopLexical",
+          "n": 3237,
+          "correct": 782,
+          "overall_hits@1": 24.158171146122953,
+          "path_hit@80": 57.64596848934198,
+          "avg_paths": 42.11183194315724,
+          "wall_sec": 5.283262729644775,
+          "by_qlabel": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 604,
+              "hits@1": 56.766917293233085
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 95,
+              "hits@1": 7.240853658536586
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 58,
+              "hits@1": 10.193321616871705
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 25,
+              "hits@1": 8.561643835616438
+            }
+          },
+          "by_qtype": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 604,
+              "hits@1": 56.766917293233085
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 95,
+              "hits@1": 7.240853658536586
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 58,
+              "hits@1": 10.193321616871705
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 25,
+              "hits@1": 8.561643835616438
+            }
+          },
+          "by_answer_type": {
+            "time": {
+              "total": 1210,
+              "correct": 708,
+              "hits@1": 58.51239669421488
+            },
+            "entity": {
+              "total": 2027,
+              "correct": 74,
+              "hits@1": 3.6507153428712384
+            }
+          },
+          "by_time_level": {
+            "year": {
+              "total": 3237,
+              "correct": 782,
+              "hits@1": 24.158171146122953
+            }
+          },
+          "spec": {
+            "desc": "OneHopLexical",
+            "bibfs": false,
+            "egor": false,
+            "tfc": false,
+            "onehop": true,
+            "d_max": 1,
+            "embed": false,
+            "temporal_first": true
+          }
+        },
+        {
+          "variant": "B2",
+          "desc": "EmbedMHOP (no temporal)",
+          "n": 3237,
+          "correct": 752,
+          "overall_hits@1": 23.231387086808773,
+          "path_hit@80": 60.889712696941615,
+          "avg_paths": 76.95705900525178,
+          "wall_sec": 542.3736772537231,
+          "by_qlabel": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 603,
+              "hits@1": 56.67293233082707
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 60,
+              "hits@1": 4.573170731707317
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 59,
+              "hits@1": 10.369068541300527
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 30,
+              "hits@1": 10.273972602739725
+            }
+          },
+          "by_qtype": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 603,
+              "hits@1": 56.67293233082707
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 60,
+              "hits@1": 4.573170731707317
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 59,
+              "hits@1": 10.369068541300527
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 30,
+              "hits@1": 10.273972602739725
+            }
+          },
+          "by_answer_type": {
+            "time": {
+              "total": 1210,
+              "correct": 692,
+              "hits@1": 57.1900826446281
+            },
+            "entity": {
+              "total": 2027,
+              "correct": 60,
+              "hits@1": 2.960039467192896
+            }
+          },
+          "by_time_level": {
+            "year": {
+              "total": 3237,
+              "correct": 752,
+              "hits@1": 23.231387086808773
+            }
+          },
+          "spec": {
+            "desc": "EmbedMHOP (no temporal)",
+            "bibfs": true,
+            "egor": false,
+            "tfc": false,
+            "onehop": false,
+            "d_max": 2,
+            "embed": true,
+            "temporal_first": false
+          }
+        },
+        {
+          "variant": "A1",
+          "desc": "BiBFS only (Inv1)",
+          "n": 3237,
+          "correct": 749,
+          "overall_hits@1": 23.138708680877354,
+          "path_hit@80": 60.92060549891875,
+          "avg_paths": 76.95705900525178,
+          "wall_sec": 113.23341631889343,
+          "by_qlabel": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 604,
+              "hits@1": 56.766917293233085
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 57,
+              "hits@1": 4.344512195121951
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 58,
+              "hits@1": 10.193321616871705
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 30,
+              "hits@1": 10.273972602739725
+            }
+          },
+          "by_qtype": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 604,
+              "hits@1": 56.766917293233085
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 57,
+              "hits@1": 4.344512195121951
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 58,
+              "hits@1": 10.193321616871705
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 30,
+              "hits@1": 10.273972602739725
+            }
+          },
+          "by_answer_type": {
+            "time": {
+              "total": 1210,
+              "correct": 684,
+              "hits@1": 56.52892561983471
+            },
+            "entity": {
+              "total": 2027,
+              "correct": 65,
+              "hits@1": 3.206709422792304
+            }
+          },
+          "by_time_level": {
+            "year": {
+              "total": 3237,
+              "correct": 749,
+              "hits@1": 23.138708680877354
+            }
+          },
+          "spec": {
+            "desc": "BiBFS only (Inv1)",
+            "bibfs": true,
+            "egor": false,
+            "tfc": false,
+            "onehop": false,
+            "d_max": 3,
+            "embed": true,
+            "temporal_first": true
+          }
+        },
+        {
+          "variant": "FULL",
+          "desc": "BiBFS+EGOR+TFC",
+          "n": 3237,
+          "correct": 744,
+          "overall_hits@1": 22.984244670991657,
+          "path_hit@80": 58.480074142724746,
+          "avg_paths": 41.56966326845845,
+          "wall_sec": 13.314947366714478,
+          "by_qlabel": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 576,
+              "hits@1": 54.13533834586466
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 78,
+              "hits@1": 5.945121951219512
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 63,
+              "hits@1": 11.072056239015817
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 27,
+              "hits@1": 9.246575342465754
+            }
+          },
+          "by_qtype": {
+            "Temporal": {
+              "total": 1064,
+              "correct": 576,
+              "hits@1": 54.13533834586466
+            },
+            "Explicit": {
+              "total": 1312,
+              "correct": 78,
+              "hits@1": 5.945121951219512
+            },
+            "Ordinal": {
+              "total": 569,
+              "correct": 63,
+              "hits@1": 11.072056239015817
+            },
+            "Implicit": {
+              "total": 292,
+              "correct": 27,
+              "hits@1": 9.246575342465754
+            }
+          },
+          "by_answer_type": {
+            "time": {
+              "total": 1210,
+              "correct": 650,
+              "hits@1": 53.71900826446281
+            },
+            "entity": {
+              "total": 2027,
+              "correct": 94,
+              "hits@1": 4.63739516526887
+            }
+          },
+          "by_time_level": {
+            "year": {
+              "total": 3237,
+              "correct": 744,
+              "hits@1": 22.984244670991657
+            }
+          },
+          "spec": {
+            "desc": "BiBFS+EGOR+TFC",
+            "bibfs": true,
+            "egor": true,
+            "tfc": true,
+            "onehop": false,
+            "d_max": 3,
+            "embed": true,
+            "temporal_first": true
+          }
+        }
+      ],
+      "paired_bootstrap_hits@1": {
+        "B0": {
+          "vs_B0": {
+            "delta": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "includes_0": true,
+            "n": 3237,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": -18.28853877046648,
+            "ci_low": -19.987642879209144,
+            "ci_high": -16.55854185974668,
+            "includes_0": false,
+            "n": 3237,
+            "n_boot": 2000
+          }
+        },
+        "B1": {
+          "vs_B0": {
+            "delta": 19.462465245597777,
+            "ci_low": 17.82437442075996,
+            "ci_high": 21.100556070435584,
+            "includes_0": false,
+            "n": 3237,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": 1.1739264751312954,
+            "ci_low": 0.0,
+            "ci_high": 2.316960148285449,
+            "includes_0": true,
+            "n": 3237,
+            "n_boot": 2000
+          }
+        },
+        "B2": {
+          "vs_B0": {
+            "delta": 18.535681186283597,
+            "ci_low": 16.805684275563795,
+            "ci_high": 20.111986407167127,
+            "includes_0": false,
+            "n": 3237,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": 0.24714241581711704,
+            "ci_low": -0.5251776336113678,
+            "ci_high": 0.989341983317884,
+            "includes_0": true,
+            "n": 3237,
+            "n_boot": 2000
+          }
+        },
+        "A1": {
+          "vs_B0": {
+            "delta": 18.44300278035218,
+            "ci_low": 16.743898671609514,
+            "ci_high": 20.049428483163425,
+            "includes_0": false,
+            "n": 3237,
+            "n_boot": 2000
+          },
+          "vs_FULL": {
+            "delta": 0.1544640098856992,
+            "ci_low": -0.5560704355885071,
+            "ci_high": 0.8341056533827634,
+            "includes_0": true,
+            "n": 3237,
+            "n_boot": 2000
+          }
+        },
+        "FULL": {
+          "vs_B0": {
+            "delta": 18.28853877046648,
+            "ci_low": 16.55854185974668,
+            "ci_high": 19.987642879209144,
+            "includes_0": false,
+            "n": 3237,
+            "n_boot": 2000
+          }
+        }
+      }
+    }
+  },
+  "wall_sec_total": 3734.1
+}

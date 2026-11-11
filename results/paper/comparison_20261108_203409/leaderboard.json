@@ -1,0 +1,122 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "n_questions": 500,
+  "dataset": "MultiTQ",
+  "leaderboard": [
+    {
+      "variant": "FULL",
+      "desc": "BiBFS+EGOR+TFC",
+      "n": 500,
+      "correct": 124,
+      "overall_hits@1": 24.8,
+      "path_hit@80": 58.4,
+      "path_hit_at_k": {
+        "1": 34.2,
+        "5": 42.0,
+        "10": 47.8,
+        "20": 50.8,
+        "40": 54.0,
+        "80": 58.4,
+        "120": 58.4,
+        "160": 58.4
+      },
+      "avg_paths": 72.1,
+      "wall_sec": 337.9298508167267,
+      "by_qlabel": {
+        "Multiple": {
+          "total": 135,
+          "correct": 14,
+          "hits@1": 10.37037037037037
+        },
+        "Single": {
+          "total": 365,
+          "correct": 110,
+          "hits@1": 30.136986301369863
+        }
+      },
+      "by_qtype": {
+        "after_first": {
+          "total": 49,
+          "correct": 5,
+          "hits@1": 10.204081632653061
+        },
+        "first_last": {
+          "total": 108,
+          "correct": 18,
+          "hits@1": 16.666666666666668
+        },
+        "before_last": {
+          "total": 63,
+          "correct": 3,
+          "hits@1": 4.761904761904762
+        },
+        "before_after": {
+          "total": 102,
+          "correct": 45,
+          "hits@1": 44.11764705882353
+        },
+        "equal_multi": {
+          "total": 23,
+          "correct": 6,
+          "hits@1": 26.08695652173913
+        },
+        "equal": {
+          "total": 155,
+          "correct": 47,
+          "hits@1": 30.322580645161292
+        }
+      },
+      "by_answer_type": {
+        "entity": {
+          "total": 345,
+          "correct": 96,
+          "hits@1": 27.82608695652174
+        },
+        "time": {
+          "total": 155,
+          "correct": 28,
+          "hits@1": 18.06451612903226
+        }
+      },
+      "by_time_level": {
+        "day": {
+          "total": 305,
+          "correct": 55,
+          "hits@1": 18.0327868852459
+        },
+        "year": {
+          "total": 94,
+          "correct": 31,
+          "hits@1": 32.97872340425532
+        },
+        "month": {
+          "total": 101,
+          "correct": 38,
+          "hits@1": 37.62376237623762
+        }
+      },
+      "spec": {
+        "desc": "BiBFS+EGOR+TFC",
+        "bibfs": true,
+        "egor": true,
+        "tfc": true,
+        "onehop": false,
+        "exaqt_proxy": false,
+        "d_max": 3,
+        "embed": true,
+        "temporal_first": true
+      }
+    }
+  ],
+  "paired_bootstrap_hits@1": {},
+  "innovations": [
+    "Inv1 Monotone BiBFS + Adaptive D_pred + temporal beam + Score(p)",
+    "Inv2 Experience-Guided Operator Routing (EGOR)",
+    "Inv3 Temporal Faithfulness Critic (TFC)"
+  ],
+  "baselines": [
+    "B0 CandidatePrior",
+    "B1 OneHopLexical",
+    "B2 EmbedMHOP (embedding multi-hop, no temporal-first/proximity)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "n": 200,
+  "gold_type_FULL": {
+    "hits@1": 26.0,
+    "path_hit@80": 61.5
+  },
+  "blind_type_FULL": {
+    "hits@1": 23.5,
+    "path_hit@80": 61.0
+  },
+  "paired_gold_minus_blind_pp": {
+    "delta": 2.500000000000002,
+    "ci_low": 0.0,
+    "ci_high": 5.000000000000002,
+    "includes_0": true,
+    "n": 200,
+    "n_boot": 2000
+  },
+  "note": "Blind qtype exercises lexical/memory routing; LLM-Select branch still not invoked."
+}

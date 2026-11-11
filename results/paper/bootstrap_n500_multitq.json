@@ -1,0 +1,149 @@
+{
+  "dataset": "MultiTQ",
+  "n": 500,
+  "source": "E:\\cursor-code\\TKG1\\MemoTime-main\\MemoTime-main\\results\\paper\\comparison_20261106_214356",
+  "bootstrap": {
+    "A1": {
+      "vs_B0": {
+        "delta": 12.6,
+        "ci_low": 8.399999999999999,
+        "ci_high": 16.8,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": -1.3999999999999986,
+        "ci_low": -3.599999999999998,
+        "ci_high": 0.6000000000000005,
+        "includes_0": true
+      }
+    },
+    "A2": {
+      "vs_B0": {
+        "delta": 14.000000000000002,
+        "ci_low": 9.799999999999999,
+        "ci_high": 18.200000000000003,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "includes_0": true
+      }
+    },
+    "A3": {
+      "vs_B0": {
+        "delta": 12.6,
+        "ci_low": 8.399999999999999,
+        "ci_high": 16.8,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": -1.3999999999999986,
+        "ci_low": -3.599999999999998,
+        "ci_high": 0.6000000000000005,
+        "includes_0": true
+      }
+    },
+    "B0": {
+      "vs_FULL": {
+        "delta": -14.000000000000002,
+        "ci_low": -18.200000000000003,
+        "ci_high": -9.799999999999999,
+        "includes_0": false
+      }
+    },
+    "B1": {
+      "vs_B0": {
+        "delta": 9.200000000000001,
+        "ci_low": 5.6,
+        "ci_high": 12.8,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": -4.799999999999999,
+        "ci_low": -8.600000000000001,
+        "ci_high": -0.8000000000000007,
+        "includes_0": false
+      }
+    },
+    "FULL": {
+      "vs_B0": {
+        "delta": 14.000000000000002,
+        "ci_low": 9.799999999999999,
+        "ci_high": 18.200000000000003,
+        "includes_0": false
+      }
+    },
+    "H1": {
+      "vs_B0": {
+        "delta": 13.4,
+        "ci_low": 9.0,
+        "ci_high": 17.8,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": -0.6000000000000005,
+        "ci_low": -2.5999999999999996,
+        "ci_high": 1.3999999999999957,
+        "includes_0": true
+      }
+    },
+    "H2": {
+      "vs_B0": {
+        "delta": 14.000000000000002,
+        "ci_low": 9.799999999999999,
+        "ci_high": 18.200000000000003,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "includes_0": true
+      }
+    },
+    "H3": {
+      "vs_B0": {
+        "delta": 14.000000000000002,
+        "ci_low": 9.799999999999999,
+        "ci_high": 18.200000000000003,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "includes_0": true
+      }
+    },
+    "S1": {
+      "vs_B0": {
+        "delta": 12.6,
+        "ci_low": 8.4,
+        "ci_high": 16.8,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": -1.3999999999999986,
+        "ci_low": -3.400000000000003,
+        "ci_high": 0.6000000000000005,
+        "includes_0": true
+      }
+    },
+    "S2": {
+      "vs_B0": {
+        "delta": 14.000000000000002,
+        "ci_low": 9.799999999999999,
+        "ci_high": 18.200000000000003,
+        "includes_0": false
+      },
+      "vs_FULL": {
+        "delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "includes_0": true
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subset_n": 200,
+  "retrieval_gates": {
+    "always": {
+      "n_eval": 200,
+      "coverage": 1.0,
+      "hits@1_answered": 0.26
+    },
+    "pathhit": {
+      "n_eval": 200,
+      "coverage": 0.615,
+      "hits@1_answered": 0.42276422764227645
+    },
+    "combined": {
+      "n_eval": 200,
+      "coverage": 0.4,
+      "hits@1_answered": 0.3875
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "selection_gap_n": 168,
+  "decomposition_on_gap_FULL_rerun": {
+    "pipeline_correct_on_gap_subset": 0,
+    "oracle_gold_paths_correct": 89,
+    "ranking_or_selection_fixable": 89,
+    "extractor_limited": 79,
+    "rank1_has_gold": 56,
+    "gold_only_beyond_rank1": 86,
+    "pct_ranking_fixable_of_gap": 52.976190476190474,
+    "pct_extractor_limited_of_gap": 47.023809523809526
+  },
+  "full_multitq_failure_mix_from_saved_FULL_54584": {
+    "n": 54584,
+    "selection_gap": 19957,
+    "evidence_miss": 21355,
+    "selection_gap_pct_of_errors": 48.31,
+    "note": "from comparison_20261108_002112/FULL.json"
+  },
+  "details_head": [
+    {
+      "qid": "3000002",
+      "pipeline_hit": false,
+      "oracle_gold_paths_hit": true,
+      "n_gold_paths": 4,
+      "rank1_has_gold": false
+    },
+    {
+      "qid": "3000003",
+      "pipeline_hit": false,
+      "oracle_gold_paths_hit": true,
+      "n_gold_paths": 1,
+      "rank1_has_gold": false
+    },
+    {
+      "qid": "3000005",
+      "pipeline_hit": false,
+      "oracle_gold_paths_hit": true,
+      "n_gold_paths": 6,
+      "rank1_has_gold": false
+    },
+    {
+      "qid": "3000008",
+      "pipeline_hit": false,
+      "oracle_gold_paths_hit": true,
+      "n_gold_paths": 13,
+      "rank1_has_gold": false
+    },
+    {
+      "qid": "3000010",
+      "pipeline_hit": false,
+      "oracle_gold_paths_hit": true,
+      "n_gold_paths": 2,
+      "rank1_has_gold": false
+    }
+  ]
+}

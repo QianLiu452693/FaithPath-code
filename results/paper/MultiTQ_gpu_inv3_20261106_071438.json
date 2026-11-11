@@ -1,0 +1,2571 @@
+{
+  "mode": "gpu_retrieval",
+  "config": {
+    "dataset": "MultiTQ",
+    "questions": 50,
+    "skip": 0,
+    "d_max": 3,
+    "w1": 80,
+    "lambda_sem": 0.6,
+    "lambda_prox": 0.4
+  },
+  "summary": {
+    "dataset": "MultiTQ",
+    "n": 50,
+    "correct": 10,
+    "overall_hits@1": 20.0,
+    "path_hit@10": 50.0,
+    "path_hit@80": 68.0,
+    "by_qlabel": {
+      "Multiple": {
+        "total": 10,
+        "correct": 1,
+        "hits@1": 10.0
+      },
+      "Single": {
+        "total": 40,
+        "correct": 9,
+        "hits@1": 22.5
+      }
+    },
+    "by_qtype": {
+      "after_first": {
+        "total": 5,
+        "correct": 0,
+        "hits@1": 0.0
+      },
+      "first_last": {
+        "total": 11,
+        "correct": 3,
+        "hits@1": 27.27272727272727
+      },
+      "before_last": {
+        "total": 4,
+        "correct": 1,
+        "hits@1": 25.0
+      },
+      "before_after": {
+        "total": 12,
+        "correct": 2,
+        "hits@1": 16.666666666666664
+      },
+      "equal_multi": {
+        "total": 1,
+        "correct": 0,
+        "hits@1": 0.0
+      },
+      "equal": {
+        "total": 17,
+        "correct": 4,
+        "hits@1": 23.52941176470588
+      }
+    },
+    "by_answer_type": {
+      "entity": {
+        "total": 33,
+        "correct": 6,
+        "hits@1": 18.181818181818183
+      },
+      "time": {
+        "total": 17,
+        "correct": 4,
+        "hits@1": 23.52941176470588
+      }
+    },
+    "by_time_level": {
+      "day": {
+        "total": 31,
+        "correct": 4,
+        "hits@1": 12.903225806451612
+      },
+      "year": {
+        "total": 9,
+        "correct": 3,
+        "hits@1": 33.33333333333333
+      },
+      "month": {
+        "total": 10,
+        "correct": 3,
+        "hits@1": 30.0
+      }
+    },
+    "avg_paths": 72.74,
+    "tfc_faithful_rate": 100.0,
+    "egor_stats": {
+      "total": 50,
+      "memory_hits": 0,
+      "memory_hit_rate": 0.0
+    },
+    "wall_sec": 29.915580987930298,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "innovations": [
+      "Inv1: Monotone BiBFS + Adaptive D_pred + temporal beam + Score(p)",
+      "Inv2: Experience-Guided Operator Routing (EGOR)",
+      "Inv3: Temporal Faithfulness Critic (TFC)"
+    ]
+  },
+  "results": [
+    {
+      "qid": "3000000",
+      "question": "After the Danish Ministry of Defence and Security, who was the first to visit Iraq?",
+      "final_answer": "Iran",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 1.6127173900604248,
+      "seeds": [
+        "Iraq",
+        "Defense_/_Security_Ministry_(Denmark)",
+        "Ministry_(United_States)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "after_first",
+        "operators": [
+          "OneHopAfter",
+          "FirstAfter",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "first",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after_first mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9277625351852024,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Jack Straw"
+      ]
+    },
+    {
+      "qid": "3000001",
+      "question": "After the Cabinet Council of Ministers of Kazakhstan, who was the first to express the intention to negotiate with China?",
+      "final_answer": "Mainland_Affairs_Council",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.738945722579956,
+      "seeds": [
+        "China",
+        "Kazakhstan",
+        "Cabinet_/_Council_of_Ministers_/_Advisors_(Kazakhstan)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "after_first",
+        "operators": [
+          "OneHopAfter",
+          "FirstAfter",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "first",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after_first mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9308488567229732,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Citizen (North Korea)"
+      ]
+    },
+    {
+      "qid": "3000002",
+      "question": "In which year did Taiwan's Ministry of National Defence and Security last make a request to China?",
+      "final_answer": "2007",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.21448564529418945,
+      "seeds": [
+        "China",
+        "Defense_/_Security_Ministry_(Taiwan)",
+        "Ministry_(Taiwan_Affairs_Office)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9361048665394636,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2010"
+      ]
+    },
+    {
+      "qid": "3000003",
+      "question": "When did Kitti Wasinondh last express an intention to negotiate with Thailand?",
+      "final_answer": "2007-01-31",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "elapsed_sec": 0.49327898025512695,
+      "seeds": [
+        "Thailand",
+        "Kitti_Wasinondh",
+        "Cambodia"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=when mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9367880343434223,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2007-02-01"
+      ]
+    },
+    {
+      "qid": "3000004",
+      "question": "With whom did Catherine Ashton last wish to meet before Cambodia?",
+      "final_answer": "A.P._Sharma",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.47739577293395996,
+      "seeds": [
+        "Cambodia",
+        "Catherine_Ashton",
+        "Catherine_Soi"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_last",
+        "operators": [
+          "OneHopBefore",
+          "LastBefore",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "before",
+        "select": "last",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before_last mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9304058687646952,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Wen Jiabao"
+      ]
+    },
+    {
+      "qid": "3000005",
+      "question": "Who was the first country that Ethiopia expressed optimism about?",
+      "final_answer": "2005-01-10",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.5054190158843994,
+      "seeds": [
+        "Ethiopia",
+        "Foreign_Affairs_(Ethiopia)",
+        "Immigrants_(Ethiopia)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9327329470129708,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Djibouti"
+      ]
+    },
+    {
+      "qid": "3000006",
+      "question": "In which year did Iraq first negotiate with Gholamali Haddad Adel?",
+      "final_answer": "2005",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.13498234748840332,
+      "seeds": [
+        "Gholamali_Haddad_Adel",
+        "Iraq",
+        "Adel_Adawy"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9367456054235686,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2005"
+      ]
+    },
+    {
+      "qid": "3000007",
+      "question": "Before Ethiopia, which country did Seyoum Mesfin express his intention to negotiate with?",
+      "final_answer": "Foreign_Affairs_(Ethiopia)",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.11518239974975586,
+      "seeds": [
+        "Seyoum_Mesfin",
+        "Ethiopia",
+        "Foreign_Affairs_(Ethiopia)"
+      ],
+      "n_paths": 11,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.933612031413137,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "China",
+        "Sudan"
+      ]
+    },
+    {
+      "qid": "3000008",
+      "question": "Who visited China in the same month as Oleg Ostapenko?",
+      "final_answer": "Dmitry_Anatolyevich_Medvedev",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal_multi",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "month",
+      "elapsed_sec": 0.23922348022460938,
+      "seeds": [
+        "China",
+        "Oleg_Ostapenko",
+        "Dmitry_Olegovich_Rogozin"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal_multi",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9368026386282821,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Japan",
+        "Barnaby Joyce",
+        "Media Personnel (International)",
+        "Vietnam",
+        "Xi Jinping",
+        "Ibrahim Boubacar Keïta",
+        "Airline (Bulgaria)",
+        "Le Hong Anh",
+        "Vincent Gray",
+        "Abdulla Yameen",
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000009",
+      "question": "Who signed an agreement with China in April 2005?",
+      "final_answer": "South_Korea",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "elapsed_sec": 0.08736181259155273,
+      "seeds": [
+        "China",
+        "Japan",
+        "South_Korea"
+      ],
+      "n_paths": 54,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9319060726256413,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Iran",
+        "Kuomintang",
+        "South Korea",
+        "Colombia",
+        "France",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000010",
+      "question": "In which year did the Somali criminal threaten China for the first time?",
+      "final_answer": "2008",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.30271363258361816,
+      "seeds": [
+        "China",
+        "Criminal_(Somalia)",
+        "Islamic_(Somalia)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9330143399933752,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2009"
+      ]
+    },
+    {
+      "qid": "3000011",
+      "question": "Before 14 October 2015, who made Burundi suffer from conventional military forces?",
+      "final_answer": "Criminal_(Burundi)",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.7405154705047607,
+      "seeds": [
+        "Burundi",
+        "Military_(Burundi)",
+        "Government_(Burundi)"
+      ],
+      "n_paths": 31,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.924247457700591,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Al-Shabaab",
+        "Military (Burundi)"
+      ]
+    },
+    {
+      "qid": "3000012",
+      "question": "In 2005-01, who used small arms and light weapons to attack Thailand?",
+      "final_answer": "China",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "elapsed_sec": 0.12702298164367676,
+      "seeds": [
+        "Thailand",
+        "Cambodia",
+        "Hmong_(Thailand)"
+      ],
+      "n_paths": 64,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9296115149054801,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Armed Gang (Thailand)",
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000013",
+      "question": "Before 25 April 2005, who used conventional military force against Iraq?",
+      "final_answer": "Iran",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 5.605532646179199,
+      "seeds": [
+        "Iraq",
+        "Vietnam",
+        "Business_(Iraq)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9289789242976549,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Iran",
+        "Commando (Iraq)"
+      ]
+    },
+    {
+      "qid": "3000014",
+      "question": "After Devlet Bahçeli, who was the first to want to negotiate with Iraq?",
+      "final_answer": "Jack_Straw",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.473247766494751,
+      "seeds": [
+        "Iraq",
+        "Devlet_Bahçeli",
+        "Vietnam"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "after_first",
+        "operators": [
+          "OneHopAfter",
+          "FirstAfter",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "first",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after_first mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9279071406478681,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Head of Government (Egypt)"
+      ]
+    },
+    {
+      "qid": "3000015",
+      "question": "After Tony Blair, which country was the first to express an interest in cooperating with Iraq?",
+      "final_answer": "Jack_Straw",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.8200864791870117,
+      "seeds": [
+        "Iraq",
+        "Tony_Blair",
+        "Tony_Snow"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "after_first",
+        "operators": [
+          "OneHopAfter",
+          "FirstAfter",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "first",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after_first mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9307475862293503,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Iran"
+      ]
+    },
+    {
+      "qid": "3000016",
+      "question": "Before the military of Taiwan, which country did China threaten last?",
+      "final_answer": "Chen_Chao-min",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.5704987049102783,
+      "seeds": [
+        "China",
+        "Military_(Taiwan)",
+        "Business_(Taiwan)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_last",
+        "operators": [
+          "OneHopBefore",
+          "LastBefore",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "before",
+        "select": "last",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before_last mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9311387161386302,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Angela Merkel"
+      ]
+    },
+    {
+      "qid": "3000017",
+      "question": "Who praised Kuwait before Nuri al-Maliki?",
+      "final_answer": "Party_Member_(Iraq)",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.2133946418762207,
+      "seeds": [
+        "Kuwait",
+        "Nuri_al-Maliki",
+        "Business_(Kuwait)"
+      ],
+      "n_paths": 49,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9319750128789902,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Presidential Family (United States)",
+        "Shaukat Aziz",
+        "Sudan",
+        "Pervez Musharraf",
+        "Saud bin Faisal bin Abdul-Aziz",
+        "Jack Straw",
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000018",
+      "question": "Who visited Malaysia on 14 January 2007?",
+      "final_answer": "Police_(Malaysia)",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.44618916511535645,
+      "seeds": [
+        "Malaysia",
+        "Muslim_(Malaysia)",
+        "Expatriate_(Malaysia)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9297379072821885,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "China",
+        "Association of Southeast Asian Nations"
+      ]
+    },
+    {
+      "qid": "3000019",
+      "question": "Which country condemned China in August 2013?",
+      "final_answer": "South_Korea",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "elapsed_sec": 0.005632638931274414,
+      "seeds": [
+        "China",
+        "Japan",
+        "South_Korea"
+      ],
+      "n_paths": 54,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9022549637264554,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000020",
+      "question": "Who wanted to negotiate with Malaysia on 19 November 2015?",
+      "final_answer": "Police_(Malaysia)",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.00905299186706543,
+      "seeds": [
+        "Malaysia",
+        "Muslim_(Malaysia)",
+        "Expatriate_(Malaysia)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9264794302400134,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000021",
+      "question": "Could you tell me the exact month when Agence France-Presse appealed to China?",
+      "final_answer": "2005-01",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "elapsed_sec": 0.2521519660949707,
+      "seeds": [
+        "China",
+        "Agence_France-Presse",
+        "Agence_Burundaise_de_Presse"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9333902495678272,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2007-01"
+      ]
+    },
+    {
+      "qid": "3000022",
+      "question": "Could you tell me the specific month in which the citizens of Belgium formally signed an agreement with China?",
+      "final_answer": "2005-05",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "elapsed_sec": 0.19695544242858887,
+      "seeds": [
+        "China",
+        "Liberals_(Belgium)",
+        "Japan"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9314548479682425,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2005-06"
+      ]
+    },
+    {
+      "qid": "3000023",
+      "question": "In which month did United Arab Emirates receive the visit from China?",
+      "final_answer": "2005-03",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "elapsed_sec": 0.5356731414794922,
+      "seeds": [
+        "China",
+        "United_Arab_Emirates",
+        "Arab_Israelis"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9345650627951367,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2010-03"
+      ]
+    },
+    {
+      "qid": "3000024",
+      "question": "When did Vasilis Skouris visit China?",
+      "final_answer": "2005-03-21",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "elapsed_sec": 0.02613520622253418,
+      "seeds": [
+        "China",
+        "Vasilis_Skouris",
+        "Japan"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=when mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9374563772713962,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2005-03-21"
+      ]
+    },
+    {
+      "qid": "3000025",
+      "question": "In which year did the citizens of Norway express their intention to meet with Iraq?",
+      "final_answer": "2015",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.08671092987060547,
+      "seeds": [
+        "Iraq",
+        "Military_(Norway)",
+        "Vietnam"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9346300115412474,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2014"
+      ]
+    },
+    {
+      "qid": "3000026",
+      "question": "After the Media Rights Group of Thailand, who was the first to denounce Thailand?",
+      "final_answer": "Citizen_(Thailand)",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "after_first",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.59395432472229,
+      "seeds": [
+        "Thailand",
+        "Media_Rights_Group_(Thailand)",
+        "Media_(United_States)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "after_first",
+        "operators": [
+          "OneHopAfter",
+          "FirstAfter",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "first",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after_first mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.930040071573622,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "National United Front for Democracy Against Dictatorship"
+      ]
+    },
+    {
+      "qid": "3000027",
+      "question": "In which month did the African Union last ask Ethiopia?",
+      "final_answer": "2005-01",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "month",
+      "elapsed_sec": 0.15967726707458496,
+      "seeds": [
+        "African_Union",
+        "Ethiopia",
+        "Foreign_Affairs_(Ethiopia)"
+      ],
+      "n_paths": 34,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9357950990346233,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2008-12"
+      ]
+    },
+    {
+      "qid": "3000028",
+      "question": "Before 22 October 2008, which country did Malaysia make optimistic remarks about?",
+      "final_answer": "Court_Judge_(Malaysia)",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 2.0222268104553223,
+      "seeds": [
+        "Malaysia",
+        "Muslim_(Malaysia)",
+        "Expatriate_(Malaysia)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9240684992901533,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Mahmoud Abbas",
+        "Thailand",
+        "Association of Southeast Asian Nations",
+        "Iran",
+        "Japan",
+        "Government (Palestinian Territory, Occupied)",
+        "Nonaligned Movement",
+        "Tony Blair",
+        "Iraq"
+      ]
+    },
+    {
+      "qid": "3000029",
+      "question": "Who paid a visit to Iraq in June 2011?",
+      "final_answer": "Iran",
+      "is_correct": true,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "elapsed_sec": 0.16795682907104492,
+      "seeds": [
+        "Iraq",
+        "Vietnam",
+        "Business_(Iraq)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9054531546976949,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Nuri al-Maliki",
+        "Iran",
+        "Congress (United States)",
+        "Foreign Affairs (Syria)",
+        "Foreign Affairs (Italy)",
+        "Foreign Affairs (India)"
+      ]
+    },
+    {
+      "qid": "3000030",
+      "question": "In which year did Ismet Yilmaz visit Iraq for the first time?",
+      "final_answer": "2015",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.11590337753295898,
+      "seeds": [
+        "Iraq",
+        "Ismet_Yilmaz",
+        "Vietnam"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9366629540535926,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2015"
+      ]
+    },
+    {
+      "qid": "3000031",
+      "question": "Before Thailand, who last wanted to negotiate with the Governor of Thailand?",
+      "final_answer": "Citizen_(Thailand)",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.45525264739990234,
+      "seeds": [
+        "Thailand",
+        "Governor_(Thailand)",
+        "Military_Ruler_(Thailand)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_last",
+        "operators": [
+          "OneHopBefore",
+          "LastBefore",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "before",
+        "select": "last",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before_last mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9303132377584432,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000032",
+      "question": "When did Jatuporn Prompan make his first appeal to Thailand?",
+      "final_answer": "2009-09-25",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "elapsed_sec": 0.23651123046875,
+      "seeds": [
+        "Jatuporn_Prompan",
+        "Thailand",
+        "Cambodia"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=when mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.934620987778412,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2010-04-24"
+      ]
+    },
+    {
+      "qid": "3000033",
+      "question": "Before Oman, with which country did Thailand formally sign an agreement?",
+      "final_answer": "Japan",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.2888302803039551,
+      "seeds": [
+        "Thailand",
+        "Oman",
+        "Islamic_(Oman)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9372434617362051,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "China",
+        "Malaysia"
+      ]
+    },
+    {
+      "qid": "3000034",
+      "question": "When did China last visit Henry M Paulson?",
+      "final_answer": "2006-05-31",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "elapsed_sec": 0.22291946411132812,
+      "seeds": [
+        "China",
+        "Henry_M._Paulson",
+        "Bob_Paulson"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=when mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9370040874504305,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2006-09-23"
+      ]
+    },
+    {
+      "qid": "3000035",
+      "question": "Who did the Malaysian Foreign Ministry praise before Thailand?",
+      "final_answer": "Citizen_(Thailand)",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.06658124923706055,
+      "seeds": [
+        "Thailand",
+        "Malaysia",
+        "Ministry_(International)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9330140014552984,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Surakiart Sathirathai",
+        "Vietnam",
+        "Employee (Bangladesh)",
+        "Mahmoud Ahmadinejad",
+        "Laos",
+        "Barack Obama"
+      ]
+    },
+    {
+      "qid": "3000036",
+      "question": "Which country did China study before the religion of China?",
+      "final_answer": "Wen_Jiabao",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.2728235721588135,
+      "seeds": [
+        "China",
+        "Religion_(China)",
+        "Japan"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.931728885364973,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000037",
+      "question": "In what year did Qin Gang last express his intention to negotiate with Ethiopia?",
+      "final_answer": "2005",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.1348247528076172,
+      "seeds": [
+        "Qin_Gang",
+        "Ethiopia",
+        "Foreign_Affairs_(Ethiopia)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=when mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.932123973497544,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2009"
+      ]
+    },
+    {
+      "qid": "3000038",
+      "question": "In which year did the President of the Senate of Australia last visit Cambodia?",
+      "final_answer": "2007",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "first_last",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.031017065048217773,
+      "seeds": [
+        "Cambodia",
+        "President_of_the_Senate_(Australia)",
+        "President_of_the_Senate_(United_States)"
+      ],
+      "n_paths": 58,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "first_last",
+        "operators": [
+          "Timeline",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "when",
+        "select": "time",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9379007855865985,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2007"
+      ]
+    },
+    {
+      "qid": "3000039",
+      "question": "In which year was China optimistic about the leader of Ukraine?",
+      "final_answer": "2007",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": false,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "year",
+      "elapsed_sec": 0.40380334854125977,
+      "seeds": [
+        "China",
+        "Our_Ukraine",
+        "Military_(Ukraine)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9327368870844106,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2010"
+      ]
+    },
+    {
+      "qid": "3000040",
+      "question": "Who wants to negotiate with China on 16 July 2009?",
+      "final_answer": "South_Korea",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.007269144058227539,
+      "seeds": [
+        "China",
+        "Japan",
+        "South_Korea"
+      ],
+      "n_paths": 54,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9038816882519405,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Energy Department/Ministry (United States)",
+        "Admiral (China)"
+      ]
+    },
+    {
+      "qid": "3000041",
+      "question": "Before the Asian Disaster Preparedness Centre, who did Thailand make optimistic comments about?",
+      "final_answer": "Japan",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.043869972229003906,
+      "seeds": [
+        "Thailand",
+        "Asian_Disaster_Preparedness_Center",
+        "Cambodia"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9374710281829985,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Citizen (Thailand)"
+      ]
+    },
+    {
+      "qid": "3000042",
+      "question": "When did Thailand express its intention to cooperate with Donald Rumsfeld?",
+      "final_answer": "2005-01-06",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "time",
+      "time_level": "day",
+      "elapsed_sec": 0.20834612846374512,
+      "seeds": [
+        "Donald_Rumsfeld",
+        "Thailand",
+        "Cambodia"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=when mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9320517327799667,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "2005-06-06"
+      ]
+    },
+    {
+      "qid": "3000043",
+      "question": "Before South Korea, with whom did Oman last wish to establish diplomatic cooperation?",
+      "final_answer": "Wen_Jiabao",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "before_last",
+      "qlabel": "Multiple",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.47823119163513184,
+      "seeds": [
+        "South_Korea",
+        "Oman",
+        "Islamic_(Oman)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_last",
+        "operators": [
+          "OneHopBefore",
+          "LastBefore",
+          "Timeline"
+        ],
+        "d_pred": 2,
+        "time_mode": "before",
+        "select": "last",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=before_last mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9338857346951082,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Qatar"
+      ]
+    },
+    {
+      "qid": "3000044",
+      "question": "Who made optimistic remarks about Iraq in 2009?",
+      "final_answer": "Iran",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "year",
+      "elapsed_sec": 0.008204460144042969,
+      "seeds": [
+        "Iraq",
+        "Vietnam",
+        "Business_(Iraq)"
+      ],
+      "n_paths": 80,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9072390931432388,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Barack Obama",
+        "Nuri al-Maliki",
+        "China",
+        "Japan",
+        "Supreme Council (Iraq)",
+        "Vietnam"
+      ]
+    },
+    {
+      "qid": "3000045",
+      "question": "Who attacked Iraq with small arms and light weapons after 9 August 2006?",
+      "final_answer": "Iran",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 8.242301940917969,
+      "seeds": [
+        "Iraq",
+        "Vietnam",
+        "Business_(Iraq)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9286927347589693,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Iran",
+        "Armed Rebel (Syria)",
+        "Israeli Defense Forces"
+      ]
+    },
+    {
+      "qid": "3000046",
+      "question": "Who did Iraq reject after the dissident of the People's Mujahedin of Iran?",
+      "final_answer": "Jack_Straw",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.4122605323791504,
+      "seeds": [
+        "Iraq",
+        "Iran",
+        "Mujahideen_(Iran)"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9323009021018185,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Barack Obama",
+        "Iran",
+        "Nuri al-Maliki",
+        "Member of Parliament (Iraq)",
+        "Defense / Security Ministry (United States)",
+        "Student (Iraq)",
+        "Congress (United States)",
+        "Bank (Iraq)"
+      ]
+    },
+    {
+      "qid": "3000047",
+      "question": "On 7 August 2005, which country paid a visit to China?",
+      "final_answer": "South_Korea",
+      "is_correct": false,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.007630825042724609,
+      "seeds": [
+        "China",
+        "Japan",
+        "South_Korea"
+      ],
+      "n_paths": 54,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9302595741073254,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Japan"
+      ]
+    },
+    {
+      "qid": "3000048",
+      "question": "Who visited China in June 2010?",
+      "final_answer": "South_Korea",
+      "is_correct": true,
+      "path_hit@10": true,
+      "path_hit@80": true,
+      "qtype": "equal",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "month",
+      "elapsed_sec": 0.007081031799316406,
+      "seeds": [
+        "China",
+        "Japan",
+        "South_Korea"
+      ],
+      "n_paths": 54,
+      "d_pred": 1,
+      "egor": {
+        "qtype": "equal",
+        "operators": [
+          "SameDay",
+          "SameMonth",
+          "OneHop"
+        ],
+        "d_pred": 1,
+        "time_mode": "equal",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=- mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9020993158061752,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Hui Liangyu",
+        "Iran",
+        "UAE Armed Forces",
+        "Foreign Affairs (South Korea)",
+        "Dmitry Anatolyevich Medvedev",
+        "Linda Lingle",
+        "Wen Jiabao",
+        "Mahmoud Ahmadinejad",
+        "Joon Young Woo",
+        "International Government Organizations",
+        "Ministry (Iran)",
+        "Boris Vyacheslavovich Gryzlov",
+        "Valdis Dombrovskis",
+        "Dianne Feinstein"
+      ]
+    },
+    {
+      "qid": "3000049",
+      "question": "Who criticised Chuck Hagel after China?",
+      "final_answer": "Iraq",
+      "is_correct": false,
+      "path_hit@10": false,
+      "path_hit@80": true,
+      "qtype": "before_after",
+      "qlabel": "Single",
+      "answer_type": "entity",
+      "time_level": "day",
+      "elapsed_sec": 0.29593515396118164,
+      "seeds": [
+        "China",
+        "Chuck_Hagel",
+        "Japan"
+      ],
+      "n_paths": 80,
+      "d_pred": 2,
+      "egor": {
+        "qtype": "before_after",
+        "operators": [
+          "Timeline",
+          "OneHopAfter",
+          "OneHopBefore"
+        ],
+        "d_pred": 2,
+        "time_mode": "after",
+        "select": "all",
+        "confidence": 0.85,
+        "source": "prior",
+        "relation_hints": [],
+        "notes": "lexical=after mem=-"
+      },
+      "tfc": {
+        "faithful": true,
+        "score": 0.9352210180131992,
+        "violations": []
+      },
+      "innovations": [
+        "bibfs_adaptive_dpred",
+        "egor",
+        "tfc"
+      ],
+      "golds": [
+        "Sergey Kuzhugetovich Shoygu"
+      ]
+    }
+  ]
+}

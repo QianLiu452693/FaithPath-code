@@ -1,0 +1,3039 @@
+{
+  "summary": {
+    "variant": "FULL",
+    "desc": "BiBFS+EGOR+TFC",
+    "n": 200,
+    "correct": 46,
+    "overall_hits@1": 23.0,
+    "path_hit@80": 57.0,
+    "avg_paths": 40.775,
+    "wall_sec": 0.3267967700958252,
+    "by_qlabel": {
+      "Temporal": {
+        "total": 63,
+        "correct": 39,
+        "hits@1": 61.904761904761905
+      },
+      "Explicit": {
+        "total": 87,
+        "correct": 6,
+        "hits@1": 6.896551724137931
+      },
+      "Ordinal": {
+        "total": 31,
+        "correct": 1,
+        "hits@1": 3.225806451612903
+      },
+      "Implicit": {
+        "total": 19,
+        "correct": 0,
+        "hits@1": 0.0
+      }
+    },
+    "by_qtype": {
+      "Temporal": {
+        "total": 63,
+        "correct": 39,
+        "hits@1": 61.904761904761905
+      },
+      "Explicit": {
+        "total": 87,
+        "correct": 6,
+        "hits@1": 6.896551724137931
+      },
+      "Ordinal": {
+        "total": 31,
+        "correct": 1,
+        "hits@1": 3.225806451612903
+      },
+      "Implicit": {
+        "total": 19,
+        "correct": 0,
+        "hits@1": 0.0
+      }
+    },
+    "by_answer_type": {
+      "time": {
+        "total": 71,
+        "correct": 40,
+        "hits@1": 56.33802816901409
+      },
+      "entity": {
+        "total": 129,
+        "correct": 6,
+        "hits@1": 4.651162790697675
+      }
+    },
+    "by_time_level": {
+      "year": {
+        "total": 200,
+        "correct": 46,
+        "hits@1": 23.0
+      }
+    },
+    "spec": {
+      "desc": "BiBFS+EGOR+TFC",
+      "bibfs": true,
+      "egor": true,
+      "tfc": true,
+      "onehop": false,
+      "d_max": 3,
+      "embed": true
+    }
+  },
+  "results": [
+    {
+      "qid": "12945",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 26,
+      "path_hit@80": true,
+      "golds": [
+        "1994-03-01"
+      ]
+    },
+    {
+      "qid": "12946",
+      "is_correct": false,
+      "final_answer": "1972",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 8,
+      "path_hit@80": false,
+      "golds": [
+        "Jerusalem Prize"
+      ]
+    },
+    {
+      "qid": "12947",
+      "is_correct": false,
+      "final_answer": "Catherine Dickens",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 62,
+      "path_hit@80": true,
+      "golds": [
+        "The Pickwick Papers"
+      ]
+    },
+    {
+      "qid": "12948",
+      "is_correct": false,
+      "final_answer": "1",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 24,
+      "path_hit@80": false,
+      "golds": [
+        "509475"
+      ]
+    },
+    {
+      "qid": "12949",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "1972-01-01"
+      ]
+    },
+    {
+      "qid": "12950",
+      "is_correct": false,
+      "final_answer": "Academy Award for Best Original Dramatic or Comedy Score",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 56,
+      "path_hit@80": true,
+      "golds": [
+        "Academy Award for Best Original Musical Score"
+      ]
+    },
+    {
+      "qid": "12951",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Abigail Adams"
+      ]
+    },
+    {
+      "qid": "12952",
+      "is_correct": false,
+      "final_answer": "National Basketball Association",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2004 NBA Finals"
+      ]
+    },
+    {
+      "qid": "12953",
+      "is_correct": false,
+      "final_answer": "census",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Nathan Deal",
+        "Sonny Perdue"
+      ]
+    },
+    {
+      "qid": "12954",
+      "is_correct": true,
+      "final_answer": "Larry Page",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 67,
+      "path_hit@80": true,
+      "golds": [
+        "Larry Page"
+      ]
+    },
+    {
+      "qid": "12955",
+      "is_correct": false,
+      "final_answer": "habilitation",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 10,
+      "path_hit@80": true,
+      "golds": [
+        "University of Tübingen"
+      ]
+    },
+    {
+      "qid": "12956",
+      "is_correct": false,
+      "final_answer": "Cy Coleman",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 15,
+      "path_hit@80": false,
+      "golds": [
+        "New York City"
+      ]
+    },
+    {
+      "qid": "12957",
+      "is_correct": false,
+      "final_answer": "Elvis '56",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": []
+    },
+    {
+      "qid": "12958",
+      "is_correct": false,
+      "final_answer": "Skopje",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 33,
+      "path_hit@80": false,
+      "golds": [
+        "Dresden"
+      ]
+    },
+    {
+      "qid": "12959",
+      "is_correct": false,
+      "final_answer": "chlorine",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 30,
+      "path_hit@80": true,
+      "golds": [
+        "chemical element"
+      ]
+    },
+    {
+      "qid": "12960",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 11,
+      "path_hit@80": true,
+      "golds": [
+        "0929-01-01"
+      ]
+    },
+    {
+      "qid": "12961",
+      "is_correct": false,
+      "final_answer": "married couple",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 11,
+      "path_hit@80": false,
+      "golds": [
+        "Lee Guber"
+      ]
+    },
+    {
+      "qid": "12962",
+      "is_correct": false,
+      "final_answer": "Louis Agassiz",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 7,
+      "path_hit@80": false,
+      "golds": [
+        "Copley Medal"
+      ]
+    },
+    {
+      "qid": "12963",
+      "is_correct": false,
+      "final_answer": "geographic region",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 37,
+      "path_hit@80": false,
+      "golds": [
+        "People's Republic of Hungary"
+      ]
+    },
+    {
+      "qid": "12964",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "Academy Award for Best Actress"
+      ]
+    },
+    {
+      "qid": "12965",
+      "is_correct": false,
+      "final_answer": "Fort Slocum",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 35,
+      "path_hit@80": false,
+      "golds": [
+        "Robert Anderson"
+      ]
+    },
+    {
+      "qid": "12966",
+      "is_correct": false,
+      "final_answer": "company headquarters",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 10,
+      "path_hit@80": false,
+      "golds": [
+        "Redmond"
+      ]
+    },
+    {
+      "qid": "12967",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 46,
+      "path_hit@80": true,
+      "golds": [
+        "1961-01-01"
+      ]
+    },
+    {
+      "qid": "12968",
+      "is_correct": false,
+      "final_answer": "1989",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "1993-01-01"
+      ]
+    },
+    {
+      "qid": "12969",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Lyndon B. Johnson"
+      ]
+    },
+    {
+      "qid": "12970",
+      "is_correct": false,
+      "final_answer": "Grammy Award for Best New Artist",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Attempted Mustache",
+        "Mumford & Sons"
+      ]
+    },
+    {
+      "qid": "12971",
+      "is_correct": false,
+      "final_answer": "Elizabeth of Hungary",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 32,
+      "path_hit@80": true,
+      "golds": [
+        "November 17"
+      ]
+    },
+    {
+      "qid": "12972",
+      "is_correct": false,
+      "final_answer": "Jesus",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 40,
+      "path_hit@80": true,
+      "golds": [
+        "Orthodox Christianity"
+      ]
+    },
+    {
+      "qid": "12973",
+      "is_correct": false,
+      "final_answer": "Theodora",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 16,
+      "path_hit@80": false,
+      "golds": [
+        "mosque"
+      ]
+    },
+    {
+      "qid": "12974",
+      "is_correct": false,
+      "final_answer": "leadership",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 49,
+      "path_hit@80": false,
+      "golds": [
+        "François Hollande",
+        "Nicolas Sarkozy"
+      ]
+    },
+    {
+      "qid": "12975",
+      "is_correct": false,
+      "final_answer": "capital city",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 39,
+      "path_hit@80": false,
+      "golds": [
+        "France",
+        "United Kingdom",
+        "United States of America",
+        "Australia",
+        "Argentina",
+        "Iraq",
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "qid": "12976",
+      "is_correct": false,
+      "final_answer": "Junior Seau",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 65,
+      "path_hit@80": false,
+      "golds": [
+        "Philadelphia Eagles",
+        "Minnesota Vikings"
+      ]
+    },
+    {
+      "qid": "12977",
+      "is_correct": false,
+      "final_answer": "Henry VIII of England",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 16,
+      "path_hit@80": true,
+      "golds": [
+        "1880 United Kingdom general election",
+        "1868 United Kingdom general election",
+        "1906 United Kingdom general election",
+        "1885 United Kingdom general election",
+        "1886 United Kingdom general election",
+        "1892 United Kingdom general election",
+        "1895 United Kingdom general election",
+        "1874 United Kingdom general election",
+        "1900 United Kingdom general election"
+      ]
+    },
+    {
+      "qid": "12978",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 36,
+      "path_hit@80": true,
+      "golds": [
+        "1994-01-01"
+      ]
+    },
+    {
+      "qid": "12979",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2010-01-01"
+      ]
+    },
+    {
+      "qid": "12980",
+      "is_correct": false,
+      "final_answer": "1952",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 23,
+      "path_hit@80": true,
+      "golds": [
+        "2001-01-20"
+      ]
+    },
+    {
+      "qid": "12981",
+      "is_correct": false,
+      "final_answer": "1989",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 12,
+      "path_hit@80": true,
+      "golds": [
+        "303961"
+      ]
+    },
+    {
+      "qid": "12982",
+      "is_correct": false,
+      "final_answer": "head of government",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "representative democracy",
+        "two-party system",
+        "presidential system",
+        "federal republic",
+        "republic"
+      ]
+    },
+    {
+      "qid": "12983",
+      "is_correct": false,
+      "final_answer": "point in time",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 5,
+      "path_hit@80": false,
+      "golds": [
+        "Detroit Pistons"
+      ]
+    },
+    {
+      "qid": "12984",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 68,
+      "path_hit@80": false,
+      "golds": [
+        "Abraham Lincoln"
+      ]
+    },
+    {
+      "qid": "12985",
+      "is_correct": false,
+      "final_answer": "California",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 19,
+      "path_hit@80": false,
+      "golds": [
+        "James Brendan Connolly"
+      ]
+    },
+    {
+      "qid": "12986",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": true,
+      "golds": [
+        "Peabody Award"
+      ]
+    },
+    {
+      "qid": "12987",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 23,
+      "path_hit@80": true,
+      "golds": [
+        "1996-01-01",
+        "1997-01-01",
+        "1998-01-01",
+        "1999-01-01",
+        "2000-01-01",
+        "2001-01-01",
+        "2002-01-01"
+      ]
+    },
+    {
+      "qid": "12988",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 13,
+      "path_hit@80": true,
+      "golds": [
+        "2008-08-16"
+      ]
+    },
+    {
+      "qid": "12989",
+      "is_correct": true,
+      "final_answer": "1533",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "St Stephen's Chapel",
+        "1533-04-09"
+      ]
+    },
+    {
+      "qid": "12990",
+      "is_correct": false,
+      "final_answer": "Sunderland A.F.C.",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 8,
+      "path_hit@80": false,
+      "golds": [
+        "Jean Peters"
+      ]
+    },
+    {
+      "qid": "12991",
+      "is_correct": false,
+      "final_answer": "2010 A Championship",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 46,
+      "path_hit@80": true,
+      "golds": [
+        "2010 Formula One season"
+      ]
+    },
+    {
+      "qid": "12992",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": true,
+      "golds": [
+        "César Award for Best Actor"
+      ]
+    },
+    {
+      "qid": "12993",
+      "is_correct": false,
+      "final_answer": "acting",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 50,
+      "path_hit@80": false,
+      "golds": [
+        "Renate Blauel"
+      ]
+    },
+    {
+      "qid": "12994",
+      "is_correct": false,
+      "final_answer": "Chief of the Astronaut Office",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 14,
+      "path_hit@80": false,
+      "golds": [
+        "Olusegun Obasanjo"
+      ]
+    },
+    {
+      "qid": "12995",
+      "is_correct": false,
+      "final_answer": "group theory",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Al-Qaeda"
+      ]
+    },
+    {
+      "qid": "12996",
+      "is_correct": false,
+      "final_answer": "Carly Simon",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 18,
+      "path_hit@80": false,
+      "golds": []
+    },
+    {
+      "qid": "12997",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 29,
+      "path_hit@80": true,
+      "golds": [
+        "122483",
+        "1922-01-01"
+      ]
+    },
+    {
+      "qid": "12998",
+      "is_correct": false,
+      "final_answer": "Naomi Harada",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 46,
+      "path_hit@80": true,
+      "golds": [
+        "FC Barcelona",
+        "Argentina national football team"
+      ]
+    },
+    {
+      "qid": "12999",
+      "is_correct": true,
+      "final_answer": "2005",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 23,
+      "path_hit@80": true,
+      "golds": [
+        "2005-01-01"
+      ]
+    },
+    {
+      "qid": "13000",
+      "is_correct": false,
+      "final_answer": "point in time",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 5,
+      "path_hit@80": false,
+      "golds": [
+        "Detroit Pistons"
+      ]
+    },
+    {
+      "qid": "13001",
+      "is_correct": false,
+      "final_answer": "1982",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 73,
+      "path_hit@80": true,
+      "golds": [
+        "2.7"
+      ]
+    },
+    {
+      "qid": "13002",
+      "is_correct": false,
+      "final_answer": "1797",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 35,
+      "path_hit@80": true,
+      "golds": [
+        "1730-05-23",
+        "1813-05-02"
+      ]
+    },
+    {
+      "qid": "13003",
+      "is_correct": false,
+      "final_answer": "Denmark",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 68,
+      "path_hit@80": true,
+      "golds": [
+        "Lothair I",
+        "Louis the German",
+        "Charlemagne",
+        "Charles the Bald"
+      ]
+    },
+    {
+      "qid": "13004",
+      "is_correct": false,
+      "final_answer": "Dwight Howard",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Shirley Franklin"
+      ]
+    },
+    {
+      "qid": "13005",
+      "is_correct": false,
+      "final_answer": "Apollo 11",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 41,
+      "path_hit@80": true,
+      "golds": [
+        "Neil Armstrong",
+        "Pete Conrad",
+        "Buzz Aldrin"
+      ]
+    },
+    {
+      "qid": "13006",
+      "is_correct": true,
+      "final_answer": "2001",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 40,
+      "path_hit@80": true,
+      "golds": [
+        "1975-11-12",
+        "1976-01-11",
+        "1977-11-01",
+        "1977-12-14",
+        "1979-10-03",
+        "1979-10-13",
+        "1979-10-15",
+        "1980-04-10",
+        "1981-09-01",
+        "1981-10-01",
+        "1982-10-01",
+        "1982-10-19",
+        "1983-08-22",
+        "1983-09-11",
+        "1983-09-22",
+        "1983-10-11",
+        "1985-04-15",
+        "1985-05-18",
+        "1986-10-01",
+        "1991-10-01",
+        "2000-06-28",
+        "2000-09-01",
+        "2001-06-25",
+        "2001-09-01",
+        "2003-07-02",
+        "2004-03-01",
+        "2004-08-18",
+        "2004-10-17"
+      ]
+    },
+    {
+      "qid": "13007",
+      "is_correct": false,
+      "final_answer": "Chile",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 65,
+      "path_hit@80": false,
+      "golds": [
+        "Sebastian Piñera"
+      ]
+    },
+    {
+      "qid": "13008",
+      "is_correct": true,
+      "final_answer": "Super Bowl XL",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 67,
+      "path_hit@80": true,
+      "golds": [
+        "Super Bowl IX",
+        "Super Bowl XIV",
+        "Super Bowl X",
+        "Super Bowl XIII",
+        "Super Bowl XLIII",
+        "Super Bowl XL"
+      ]
+    },
+    {
+      "qid": "13009",
+      "is_correct": false,
+      "final_answer": "class of award",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 19,
+      "path_hit@80": true,
+      "golds": [
+        "Major League Baseball All-Star",
+        "Roberto Clemente Award"
+      ]
+    },
+    {
+      "qid": "13010",
+      "is_correct": false,
+      "final_answer": "2011",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 68,
+      "path_hit@80": true,
+      "golds": [
+        "1986-01-01"
+      ]
+    },
+    {
+      "qid": "13011",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 16,
+      "path_hit@80": true,
+      "golds": [
+        "1969-01-01"
+      ]
+    },
+    {
+      "qid": "13012",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 25,
+      "path_hit@80": true,
+      "golds": [
+        "1904-01-01"
+      ]
+    },
+    {
+      "qid": "13013",
+      "is_correct": false,
+      "final_answer": "class of award",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": false,
+      "golds": [
+        "Righteous Among the Nations",
+        "National Medal of Arts"
+      ]
+    },
+    {
+      "qid": "13014",
+      "is_correct": false,
+      "final_answer": "2011",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 10,
+      "path_hit@80": false,
+      "golds": [
+        "306800000"
+      ]
+    },
+    {
+      "qid": "13015",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 68,
+      "path_hit@80": false,
+      "golds": [
+        "Franklin Delano Roosevelt"
+      ]
+    },
+    {
+      "qid": "13016",
+      "is_correct": false,
+      "final_answer": "tropical cyclone",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 43,
+      "path_hit@80": false,
+      "golds": [
+        "Hurricane Hanna"
+      ]
+    },
+    {
+      "qid": "13017",
+      "is_correct": false,
+      "final_answer": "2011",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 66,
+      "path_hit@80": true,
+      "golds": [
+        "1028737436"
+      ]
+    },
+    {
+      "qid": "13018",
+      "is_correct": false,
+      "final_answer": "Charles Seely",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 20,
+      "path_hit@80": false,
+      "golds": [
+        "John C. Breckinridge",
+        "Stephen A. Douglas"
+      ]
+    },
+    {
+      "qid": "13019",
+      "is_correct": false,
+      "final_answer": "1986",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 48,
+      "path_hit@80": true,
+      "golds": [
+        "1194769"
+      ]
+    },
+    {
+      "qid": "13020",
+      "is_correct": false,
+      "final_answer": "Titanic Waltz",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Art Directors Guild Award for Excellence in Production Design for a Feature Film"
+      ]
+    },
+    {
+      "qid": "13021",
+      "is_correct": false,
+      "final_answer": "Naomi Harada",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 41,
+      "path_hit@80": true,
+      "golds": [
+        "1969 World Series",
+        "1986 World Series"
+      ]
+    },
+    {
+      "qid": "13022",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 14,
+      "path_hit@80": true,
+      "golds": [
+        "1971-03-31"
+      ]
+    },
+    {
+      "qid": "13023",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "John Adams"
+      ]
+    },
+    {
+      "qid": "13024",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 4,
+      "path_hit@80": true,
+      "golds": [
+        "1945-01-01"
+      ]
+    },
+    {
+      "qid": "13025",
+      "is_correct": false,
+      "final_answer": "1860",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 71,
+      "path_hit@80": true,
+      "golds": [
+        "1992-11-03",
+        "1996-11-05"
+      ]
+    },
+    {
+      "qid": "13026",
+      "is_correct": true,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": true,
+      "golds": [
+        "Nobel Prize in Physics"
+      ]
+    },
+    {
+      "qid": "13027",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 27,
+      "path_hit@80": true,
+      "golds": [
+        "1995-01-01"
+      ]
+    },
+    {
+      "qid": "13028",
+      "is_correct": false,
+      "final_answer": "married couple",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 16,
+      "path_hit@80": false,
+      "golds": [
+        "Ernest Aldrich Simpson"
+      ]
+    },
+    {
+      "qid": "13029",
+      "is_correct": false,
+      "final_answer": "Federal Government of the United States",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Dean Acheson",
+        "John Jackson Sparkman"
+      ]
+    },
+    {
+      "qid": "13030",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 25,
+      "path_hit@80": true,
+      "golds": [
+        "17.1"
+      ]
+    },
+    {
+      "qid": "13031",
+      "is_correct": false,
+      "final_answer": "1998",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "2004-01-01"
+      ]
+    },
+    {
+      "qid": "13032",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 68,
+      "path_hit@80": false,
+      "golds": [
+        "Andrew Johnson"
+      ]
+    },
+    {
+      "qid": "13033",
+      "is_correct": false,
+      "final_answer": "1510",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 28,
+      "path_hit@80": true,
+      "golds": [
+        "1961-01-01"
+      ]
+    },
+    {
+      "qid": "13034",
+      "is_correct": false,
+      "final_answer": "bounty",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "Tony Award for Best Actor in a Musical"
+      ]
+    },
+    {
+      "qid": "13035",
+      "is_correct": false,
+      "final_answer": "2006",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 5,
+      "path_hit@80": false,
+      "golds": [
+        "5"
+      ]
+    },
+    {
+      "qid": "13036",
+      "is_correct": false,
+      "final_answer": "BET Award for Athlete of the Century",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 58,
+      "path_hit@80": true,
+      "golds": [
+        "2003–04 NBA season"
+      ]
+    },
+    {
+      "qid": "13037",
+      "is_correct": false,
+      "final_answer": "married couple",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 53,
+      "path_hit@80": false,
+      "golds": []
+    },
+    {
+      "qid": "13038",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 16,
+      "path_hit@80": true,
+      "golds": [
+        "1964-06-27",
+        "1965-05-25"
+      ]
+    },
+    {
+      "qid": "13039",
+      "is_correct": false,
+      "final_answer": "George Everest",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 29,
+      "path_hit@80": false,
+      "golds": [
+        "Junko Tabei"
+      ]
+    },
+    {
+      "qid": "13040",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 22,
+      "path_hit@80": true,
+      "golds": [
+        "1"
+      ]
+    },
+    {
+      "qid": "13041",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 70,
+      "path_hit@80": true,
+      "golds": [
+        "1230-01-01"
+      ]
+    },
+    {
+      "qid": "13042",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 6,
+      "path_hit@80": true,
+      "golds": [
+        "Acts of Union 1800",
+        "1801-01-01"
+      ]
+    },
+    {
+      "qid": "13043",
+      "is_correct": true,
+      "final_answer": "2014",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2014-04-04"
+      ]
+    },
+    {
+      "qid": "13044",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 26,
+      "path_hit@80": true,
+      "golds": [
+        "1955-05-12"
+      ]
+    },
+    {
+      "qid": "13045",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "1993-02-25"
+      ]
+    },
+    {
+      "qid": "13046",
+      "is_correct": false,
+      "final_answer": "association football",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 5,
+      "path_hit@80": true,
+      "golds": [
+        "Clube Atlético Mineiro",
+        "Brazil national football team"
+      ]
+    },
+    {
+      "qid": "13047",
+      "is_correct": false,
+      "final_answer": "Mahmud of Ghazni",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Al-Said Barakah"
+      ]
+    },
+    {
+      "qid": "13048",
+      "is_correct": false,
+      "final_answer": "The Astonishing",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 8,
+      "path_hit@80": false,
+      "golds": [
+        "Mohinder Amarnath"
+      ]
+    },
+    {
+      "qid": "13049",
+      "is_correct": false,
+      "final_answer": "married couple",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 26,
+      "path_hit@80": false,
+      "golds": []
+    },
+    {
+      "qid": "13050",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 19,
+      "path_hit@80": true,
+      "golds": [
+        "1960-01-01",
+        "1968-01-01"
+      ]
+    },
+    {
+      "qid": "13051",
+      "is_correct": false,
+      "final_answer": "1888",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 11,
+      "path_hit@80": true,
+      "golds": [
+        "32016"
+      ]
+    },
+    {
+      "qid": "13052",
+      "is_correct": false,
+      "final_answer": "association football",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "A.F.C. Ajax"
+      ]
+    },
+    {
+      "qid": "13053",
+      "is_correct": false,
+      "final_answer": "human",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 21,
+      "path_hit@80": false,
+      "golds": [
+        "Khadija bint Khuwaylid"
+      ]
+    },
+    {
+      "qid": "13054",
+      "is_correct": false,
+      "final_answer": "John McGuinness",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 21,
+      "path_hit@80": false,
+      "golds": [
+        "Princeton University"
+      ]
+    },
+    {
+      "qid": "13055",
+      "is_correct": false,
+      "final_answer": "1800",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 69,
+      "path_hit@80": true,
+      "golds": [
+        "1999-12-16"
+      ]
+    },
+    {
+      "qid": "13056",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 22,
+      "path_hit@80": true,
+      "golds": [
+        "1994-01-01"
+      ]
+    },
+    {
+      "qid": "13057",
+      "is_correct": false,
+      "final_answer": "1777",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 13,
+      "path_hit@80": true,
+      "golds": [
+        "1768-08-30"
+      ]
+    },
+    {
+      "qid": "13058",
+      "is_correct": false,
+      "final_answer": "leadership",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": false,
+      "golds": [
+        "François Hollande",
+        "Nicolas Sarkozy"
+      ]
+    },
+    {
+      "qid": "13059",
+      "is_correct": false,
+      "final_answer": "human",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 4,
+      "path_hit@80": false,
+      "golds": [
+        "Alexander Graham Bell"
+      ]
+    },
+    {
+      "qid": "13060",
+      "is_correct": false,
+      "final_answer": "state government",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 67,
+      "path_hit@80": false,
+      "golds": [
+        "Jacek Jaśkowiak"
+      ]
+    },
+    {
+      "qid": "13061",
+      "is_correct": false,
+      "final_answer": "President of the United States",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Harry S. Truman",
+        "Franklin Delano Roosevelt"
+      ]
+    },
+    {
+      "qid": "13062",
+      "is_correct": false,
+      "final_answer": "Republican Party",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 73,
+      "path_hit@80": true,
+      "golds": [
+        "1962 World Series",
+        "1961 World Series",
+        "1998 World Series",
+        "1999 World Series",
+        "1996 World Series",
+        "2009 World Series",
+        "1949 World Series",
+        "1923 World Series",
+        "1927 World Series",
+        "1928 World Series",
+        "1936 World Series",
+        "1937 World Series",
+        "1938 World Series",
+        "1939 World Series",
+        "1941 World Series",
+        "1943 World Series",
+        "1951 World Series",
+        "1932 World Series",
+        "1950 World Series",
+        "1956 World Series",
+        "1952 World Series",
+        "1953 World Series",
+        "1947 World Series",
+        "1977 World Series",
+        "1978 World Series",
+        "1958 World Series",
+        "2000 World Series"
+      ]
+    },
+    {
+      "qid": "13063",
+      "is_correct": false,
+      "final_answer": "1977",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 51,
+      "path_hit@80": true,
+      "golds": [
+        "207.14"
+      ]
+    },
+    {
+      "qid": "13064",
+      "is_correct": false,
+      "final_answer": "1001",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 70,
+      "path_hit@80": true,
+      "golds": [
+        "1983-01-01"
+      ]
+    },
+    {
+      "qid": "13065",
+      "is_correct": false,
+      "final_answer": "Europe",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 7,
+      "path_hit@80": false,
+      "golds": [
+        "Ayrton Senna",
+        "Alain Prost",
+        "Nigel Mansell",
+        "Damon Hill",
+        "Fernando Alonso",
+        "Nelson Piquet",
+        "Didier Pironi",
+        "Riccardo Patrese",
+        "David Coulthard",
+        "Patrick Tambay",
+        "Elio de Angelis",
+        "Jim Clark",
+        "Ralf Schumacher",
+        "Heinz-Harald Frentzen",
+        "Niki Lauda",
+        "Michael Schumacher"
+      ]
+    },
+    {
+      "qid": "13066",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 66,
+      "path_hit@80": true,
+      "golds": [
+        "2003-01-01"
+      ]
+    },
+    {
+      "qid": "13067",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 29,
+      "path_hit@80": true,
+      "golds": [
+        "100000",
+        "2005-01-01"
+      ]
+    },
+    {
+      "qid": "13068",
+      "is_correct": false,
+      "final_answer": "point in time",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 18,
+      "path_hit@80": false,
+      "golds": [
+        "The Slim Shady LP"
+      ]
+    },
+    {
+      "qid": "13069",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": false,
+      "golds": [
+        "Copley Medal",
+        "Order of Merit"
+      ]
+    },
+    {
+      "qid": "13070",
+      "is_correct": false,
+      "final_answer": "J. D. Salinger",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "David"
+      ]
+    },
+    {
+      "qid": "13071",
+      "is_correct": false,
+      "final_answer": "Muhammad",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 38,
+      "path_hit@80": false,
+      "golds": [
+        "Tu pista madfe"
+      ]
+    },
+    {
+      "qid": "13072",
+      "is_correct": false,
+      "final_answer": "1959",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 57,
+      "path_hit@80": true,
+      "golds": [
+        "1967-08-10"
+      ]
+    },
+    {
+      "qid": "13073",
+      "is_correct": false,
+      "final_answer": "binomial series",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 33,
+      "path_hit@80": true,
+      "golds": [
+        "1995 World Series"
+      ]
+    },
+    {
+      "qid": "13074",
+      "is_correct": false,
+      "final_answer": "Mia Hamm",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 36,
+      "path_hit@80": false,
+      "golds": []
+    },
+    {
+      "qid": "13075",
+      "is_correct": false,
+      "final_answer": "Non-fatal suicidal behaviour in women--the role of spousal substance abuse and marital violence.",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 10,
+      "path_hit@80": false,
+      "golds": [
+        "Douglas Fairbanks Jr"
+      ]
+    },
+    {
+      "qid": "13076",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 64,
+      "path_hit@80": true,
+      "golds": [
+        "-3500-01-01"
+      ]
+    },
+    {
+      "qid": "13077",
+      "is_correct": true,
+      "final_answer": "Krasnoyarsk",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 42,
+      "path_hit@80": true,
+      "golds": [
+        "Krasnoyarsk"
+      ]
+    },
+    {
+      "qid": "13078",
+      "is_correct": false,
+      "final_answer": "2013",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 53,
+      "path_hit@80": true,
+      "golds": [
+        "110755"
+      ]
+    },
+    {
+      "qid": "13079",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 20,
+      "path_hit@80": true,
+      "golds": [
+        "1963-01-01"
+      ]
+    },
+    {
+      "qid": "13080",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 32,
+      "path_hit@80": true,
+      "golds": [
+        "Computer Pioneer Award"
+      ]
+    },
+    {
+      "qid": "13081",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 67,
+      "path_hit@80": false,
+      "golds": [
+        "James S. Sherman"
+      ]
+    },
+    {
+      "qid": "13082",
+      "is_correct": false,
+      "final_answer": "United States of America",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Kingston"
+      ]
+    },
+    {
+      "qid": "13083",
+      "is_correct": false,
+      "final_answer": "Denver",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 71,
+      "path_hit@80": true,
+      "golds": [
+        "2007 World Series"
+      ]
+    },
+    {
+      "qid": "13084",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 49,
+      "path_hit@80": true,
+      "golds": [
+        "1970-01-01"
+      ]
+    },
+    {
+      "qid": "13085",
+      "is_correct": false,
+      "final_answer": "Euro",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 75,
+      "path_hit@80": false,
+      "golds": [
+        "constitutional republic",
+        "representative democracy",
+        "presidential system",
+        "federal republic"
+      ]
+    },
+    {
+      "qid": "13086",
+      "is_correct": false,
+      "final_answer": "1993",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 33,
+      "path_hit@80": true,
+      "golds": [
+        "1988-01-01"
+      ]
+    },
+    {
+      "qid": "13087",
+      "is_correct": false,
+      "final_answer": "Government of Spain",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "José Luis Rodríguez Zapatero"
+      ]
+    },
+    {
+      "qid": "13088",
+      "is_correct": false,
+      "final_answer": "2002",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 33,
+      "path_hit@80": true,
+      "golds": [
+        "1973-01-01"
+      ]
+    },
+    {
+      "qid": "13089",
+      "is_correct": false,
+      "final_answer": "publication date",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 48,
+      "path_hit@80": true,
+      "golds": [
+        "PlayStation",
+        "Microsoft Windows"
+      ]
+    },
+    {
+      "qid": "13090",
+      "is_correct": false,
+      "final_answer": "Spartak Moscow",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 18,
+      "path_hit@80": false,
+      "golds": [
+        "Luzhniki Stadium"
+      ]
+    },
+    {
+      "qid": "13091",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 47,
+      "path_hit@80": true,
+      "golds": [
+        "1999-01-01"
+      ]
+    },
+    {
+      "qid": "13092",
+      "is_correct": false,
+      "final_answer": "1620s",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "Mayflower Compact"
+      ]
+    },
+    {
+      "qid": "13093",
+      "is_correct": false,
+      "final_answer": "Germany",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 64,
+      "path_hit@80": true,
+      "golds": [
+        "United Kingdom of Great Britain and Ireland"
+      ]
+    },
+    {
+      "qid": "13094",
+      "is_correct": false,
+      "final_answer": "bounty",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 26,
+      "path_hit@80": false,
+      "golds": [
+        "National Women's Hall of Fame"
+      ]
+    },
+    {
+      "qid": "13095",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "1991-01-01"
+      ]
+    },
+    {
+      "qid": "13096",
+      "is_correct": false,
+      "final_answer": "2015",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 12,
+      "path_hit@80": false,
+      "golds": [
+        "27"
+      ]
+    },
+    {
+      "qid": "13097",
+      "is_correct": false,
+      "final_answer": "National Hockey League",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Edmonton Oilers"
+      ]
+    },
+    {
+      "qid": "13098",
+      "is_correct": false,
+      "final_answer": "neutral country",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 34,
+      "path_hit@80": false,
+      "golds": [
+        "Russia"
+      ]
+    },
+    {
+      "qid": "13099",
+      "is_correct": false,
+      "final_answer": "1990",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "0.578",
+        "0.579"
+      ]
+    },
+    {
+      "qid": "13100",
+      "is_correct": false,
+      "final_answer": "The Marriage",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 14,
+      "path_hit@80": false,
+      "golds": [
+        "Cincinnati Bengals"
+      ]
+    },
+    {
+      "qid": "13101",
+      "is_correct": false,
+      "final_answer": "1979",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 49,
+      "path_hit@80": true,
+      "golds": [
+        "848587"
+      ]
+    },
+    {
+      "qid": "13102",
+      "is_correct": false,
+      "final_answer": "2010",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 37,
+      "path_hit@80": false,
+      "golds": [
+        "4054467"
+      ]
+    },
+    {
+      "qid": "13103",
+      "is_correct": false,
+      "final_answer": "John III, Duke of Bavaria",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 21,
+      "path_hit@80": false,
+      "golds": [
+        "Prime Minister of the United Kingdom"
+      ]
+    },
+    {
+      "qid": "13104",
+      "is_correct": false,
+      "final_answer": "Oscar Nunez",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 19,
+      "path_hit@80": true,
+      "golds": [
+        "Lyndon B. Johnson"
+      ]
+    },
+    {
+      "qid": "13105",
+      "is_correct": false,
+      "final_answer": "Go Seigen",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Naoto Kan",
+        "Yoshihiko Noda"
+      ]
+    },
+    {
+      "qid": "13106",
+      "is_correct": false,
+      "final_answer": "Australia",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 5,
+      "path_hit@80": false,
+      "golds": [
+        "Shinzō Abe",
+        "Yoshihiko Noda"
+      ]
+    },
+    {
+      "qid": "13107",
+      "is_correct": false,
+      "final_answer": "February 1995",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 18,
+      "path_hit@80": true,
+      "golds": [
+        "South Africa national rugby union team"
+      ]
+    },
+    {
+      "qid": "13108",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 22,
+      "path_hit@80": true,
+      "golds": [
+        "1995-01-01",
+        "1998-01-01"
+      ]
+    },
+    {
+      "qid": "13109",
+      "is_correct": false,
+      "final_answer": "2011 in film",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 53,
+      "path_hit@80": false,
+      "golds": [
+        "Toys"
+      ]
+    },
+    {
+      "qid": "13110",
+      "is_correct": false,
+      "final_answer": "United Federation of Planets",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 33,
+      "path_hit@80": true,
+      "golds": [
+        "executive officer"
+      ]
+    },
+    {
+      "qid": "13111",
+      "is_correct": false,
+      "final_answer": "production team",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 46,
+      "path_hit@80": true,
+      "golds": [
+        "Super Bowl XXX"
+      ]
+    },
+    {
+      "qid": "13112",
+      "is_correct": false,
+      "final_answer": "Muhammad",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 5,
+      "path_hit@80": false,
+      "golds": [
+        "shepherd"
+      ]
+    },
+    {
+      "qid": "13113",
+      "is_correct": true,
+      "final_answer": "Orenburg Governorate",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 22,
+      "path_hit@80": true,
+      "golds": [
+        "Orenburg Governorate"
+      ]
+    },
+    {
+      "qid": "13114",
+      "is_correct": false,
+      "final_answer": "publication date",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 7,
+      "path_hit@80": false,
+      "golds": [
+        "Tour de France"
+      ]
+    },
+    {
+      "qid": "13115",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": true,
+      "golds": [
+        "-0562-01-01"
+      ]
+    },
+    {
+      "qid": "13116",
+      "is_correct": false,
+      "final_answer": "Edward VI of England",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Charles the Fat",
+        "Arnulf of Carinthia"
+      ]
+    },
+    {
+      "qid": "13117",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 29,
+      "path_hit@80": true,
+      "golds": [
+        "2007-01-01",
+        "2010-01-01"
+      ]
+    },
+    {
+      "qid": "13118",
+      "is_correct": false,
+      "final_answer": "married couple",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": false,
+      "golds": [
+        "Renate Blauel"
+      ]
+    },
+    {
+      "qid": "13119",
+      "is_correct": false,
+      "final_answer": "Minister for Foreign Affairs",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 14,
+      "path_hit@80": false,
+      "golds": [
+        "Henry Bilson-Legge"
+      ]
+    },
+    {
+      "qid": "13120",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 24,
+      "path_hit@80": true,
+      "golds": [
+        "1837-06-20",
+        "1901-01-22",
+        "64"
+      ]
+    },
+    {
+      "qid": "13121",
+      "is_correct": false,
+      "final_answer": "Mein Kampf",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Nobel Prize in Chemistry"
+      ]
+    },
+    {
+      "qid": "13122",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "Grammy Award for Best Classical Album",
+        "Grammy Award for Best Instrumental Soloist Performance (without orchestra)"
+      ]
+    },
+    {
+      "qid": "13123",
+      "is_correct": false,
+      "final_answer": "state government",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Georg Kronawitter"
+      ]
+    },
+    {
+      "qid": "13124",
+      "is_correct": false,
+      "final_answer": "John F. Kennedy",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Super Bowl VI",
+        "Super Bowl XXX",
+        "Super Bowl XXVII",
+        "Super Bowl XXVIII",
+        "Super Bowl XII"
+      ]
+    },
+    {
+      "qid": "13125",
+      "is_correct": false,
+      "final_answer": "tag team",
+      "qtype": "Implicit",
+      "qlabel": "Implicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": false,
+      "golds": [
+        "Boston Red Sox"
+      ]
+    },
+    {
+      "qid": "13126",
+      "is_correct": false,
+      "final_answer": "birthday",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 73,
+      "path_hit@80": true,
+      "golds": [
+        "Adam and Eve"
+      ]
+    },
+    {
+      "qid": "13127",
+      "is_correct": false,
+      "final_answer": "2000",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 14,
+      "path_hit@80": true,
+      "golds": [
+        "167"
+      ]
+    },
+    {
+      "qid": "13128",
+      "is_correct": false,
+      "final_answer": "bounty",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 18,
+      "path_hit@80": true,
+      "golds": [
+        "Booker Prize"
+      ]
+    },
+    {
+      "qid": "13129",
+      "is_correct": false,
+      "final_answer": "2004",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 13,
+      "path_hit@80": false,
+      "golds": [
+        "1633-02-23 "
+      ]
+    },
+    {
+      "qid": "13130",
+      "is_correct": true,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 31,
+      "path_hit@80": true,
+      "golds": [
+        "Nobel Prize in Literature"
+      ]
+    },
+    {
+      "qid": "13131",
+      "is_correct": false,
+      "final_answer": "point in time",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 7,
+      "path_hit@80": false,
+      "golds": [
+        "Susan Bay"
+      ]
+    },
+    {
+      "qid": "13132",
+      "is_correct": false,
+      "final_answer": "2011",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 39,
+      "path_hit@80": false,
+      "golds": [
+        "29984000000"
+      ]
+    },
+    {
+      "qid": "13133",
+      "is_correct": false,
+      "final_answer": "art",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 18,
+      "path_hit@80": false,
+      "golds": [
+        "LSU Tigers basketball"
+      ]
+    },
+    {
+      "qid": "13134",
+      "is_correct": false,
+      "final_answer": "prize",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 23,
+      "path_hit@80": false,
+      "golds": [
+        "Golden Lion"
+      ]
+    },
+    {
+      "qid": "13135",
+      "is_correct": false,
+      "final_answer": "2015",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 3,
+      "path_hit@80": false,
+      "golds": [
+        "4097710"
+      ]
+    },
+    {
+      "qid": "13136",
+      "is_correct": false,
+      "final_answer": "The nature of leadership",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 78,
+      "path_hit@80": false,
+      "golds": [
+        "France",
+        "United Kingdom",
+        "United States of America",
+        "Australia",
+        "Argentina",
+        "Iraq",
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "qid": "13137",
+      "is_correct": true,
+      "final_answer": "1",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 68,
+      "path_hit@80": true,
+      "golds": [
+        "1994-01-01",
+        "2005-01-01"
+      ]
+    },
+    {
+      "qid": "13138",
+      "is_correct": true,
+      "final_answer": "2006",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "time",
+      "time_level": "year",
+      "n_paths": 58,
+      "path_hit@80": true,
+      "golds": [
+        "2006-01-01"
+      ]
+    },
+    {
+      "qid": "13139",
+      "is_correct": false,
+      "final_answer": "President of the Republic",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 66,
+      "path_hit@80": false,
+      "golds": [
+        "John F. Kennedy"
+      ]
+    },
+    {
+      "qid": "13140",
+      "is_correct": false,
+      "final_answer": "Ohio House of Representatives",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 51,
+      "path_hit@80": true,
+      "golds": [
+        "Sherrod Brown",
+        "Robert Jones Portman"
+      ]
+    },
+    {
+      "qid": "13141",
+      "is_correct": false,
+      "final_answer": "Academy Award for Best Actress",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 17,
+      "path_hit@80": true,
+      "golds": [
+        "2007 World Series",
+        "2004 World Series",
+        "1903 World Series",
+        "1912 World Series",
+        "1915 World Series",
+        "1916 World Series",
+        "1918 World Series",
+        "2013 World Series",
+        "2018 World Series"
+      ]
+    },
+    {
+      "qid": "13142",
+      "is_correct": false,
+      "final_answer": "Detroit Pistons",
+      "qtype": "Temporal",
+      "qlabel": "Temporal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "2012 World Series",
+        "2014 World Series",
+        "2010 World Series"
+      ]
+    },
+    {
+      "qid": "13143",
+      "is_correct": false,
+      "final_answer": "Caught",
+      "qtype": "Ordinal",
+      "qlabel": "Ordinal",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 22,
+      "path_hit@80": false,
+      "golds": [
+        "Ramsey Nouah",
+        "Chinedu Ikedieze",
+        "Stephanie Okereke",
+        "Osita Iheme"
+      ]
+    },
+    {
+      "qid": "13144",
+      "is_correct": false,
+      "final_answer": "Go Seigen",
+      "qtype": "Explicit",
+      "qlabel": "Explicit",
+      "answer_type": "entity",
+      "time_level": "year",
+      "n_paths": 80,
+      "path_hit@80": true,
+      "golds": [
+        "Shinzō Abe",
+        "Yoshihiko Noda"
+      ]
+    }
+  ]
+}
